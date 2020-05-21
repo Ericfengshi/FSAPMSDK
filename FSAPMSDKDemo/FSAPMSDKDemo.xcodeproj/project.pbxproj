@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9303A3B32201B3C70011265D /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B22201B3C70011265D /* NavigationController.m */; };
+		9303A3B62201B3ED0011265D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B52201B3ED0011265D /* TabBarController.m */; };
+		9303A3BB2201B41B0011265D /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B92201B41B0011265D /* SettingViewController.m */; };
+		9303A3C02201B42A0011265D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3BE2201B42A0011265D /* AboutViewController.m */; };
+		9303A3C52201B4520011265D /* SimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3C32201B4520011265D /* SimulatorViewController.m */; };
+		9303A3CF2201B5020011265D /* MonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9303A3CC2201B5020011265D /* MonitorViewController.xib */; };
+		9303A3D02201B5020011265D /* MonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3CE2201B5020011265D /* MonitorViewController.m */; };
+		9303A3D622110D870011265D /* SystemMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3D422110D870011265D /* SystemMonitorViewController.m */; };
+		9303A3DD2211115C0011265D /* AboutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DC2211115C0011265D /* AboutViewModel.m */; };
+		9303A3E0221111730011265D /* SettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DF221111730011265D /* SettingViewModel.m */; };
+		9303A3E3221145750011265D /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E2221145750011265D /* SettingTableViewCell.m */; };
+		9303A3E6221147A60011265D /* SettingTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E5221147A60011265D /* SettingTableCellModel.m */; };
+		9303A3EB2211719C0011265D /* SystemMonitorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3EA2211719C0011265D /* SystemMonitorViewModel.m */; };
+		9303A3EE221172070011265D /* SystemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3ED221172070011265D /* SystemDetailViewController.m */; };
+		9303A3F52212B6DE0011265D /* SimulatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3F42212B6DE0011265D /* SimulatorViewModel.m */; };
+		9303A3FE2212C3600011265D /* SimulatorBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3FD2212C3600011265D /* SimulatorBubbleView.m */; };
+		9303A4012212CABA0011265D /* SimulatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A4002212CABA0011265D /* SimulatorManager.m */; };
+		9305B31721F5706200F30D7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31621F5706200F30D7D /* AppDelegate.m */; };
+		9305B31A21F5706200F30D7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31921F5706200F30D7D /* ViewController.m */; };
+		9305B31D21F5706200F30D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31B21F5706200F30D7D /* Main.storyboard */; };
+		9305B31F21F5706300F30D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31E21F5706300F30D7D /* Assets.xcassets */; };
+		9305B32221F5706300F30D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B32021F5706300F30D7D /* LaunchScreen.storyboard */; };
+		9305B32521F5706300F30D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32421F5706300F30D7D /* main.m */; };
+		9305B32F21F5706300F30D7D /* FSAPMSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32E21F5706300F30D7D /* FSAPMSDKDemoTests.m */; };
+		9305B33A21F5706300F30D7D /* FSAPMSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B33921F5706300F30D7D /* FSAPMSDKDemoUITests.m */; };
+		931864FE2227867E004C98F5 /* SimulatorDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */; };
+		931864FF2227867E004C98F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31921F5706200F30D7D /* ViewController.m */; };
+		931865002227867E004C98F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32421F5706300F30D7D /* main.m */; };
+		931865012227867E004C98F5 /* SimulatorCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA3522150A95005D550D /* SimulatorCrashViewController.m */; };
+		931865022227867E004C98F5 /* SimulatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3F42212B6DE0011265D /* SimulatorViewModel.m */; };
+		931865032227867E004C98F5 /* AboutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DC2211115C0011265D /* AboutViewModel.m */; };
+		931865042227867E004C98F5 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E2221145750011265D /* SettingTableViewCell.m */; };
+		931865052227867E004C98F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3BE2201B42A0011265D /* AboutViewController.m */; };
+		931865062227867E004C98F5 /* SimulatorBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3FD2212C3600011265D /* SimulatorBubbleView.m */; };
+		931865072227867E004C98F5 /* MonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3CE2201B5020011265D /* MonitorViewController.m */; };
+		931865082227867E004C98F5 /* SimulatorTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA432216512B005D550D /* SimulatorTimerViewController.m */; };
+		931865092227867E004C98F5 /* SimulatorANRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2F221501A8005D550D /* SimulatorANRViewController.m */; };
+		9318650A2227867E004C98F5 /* SimulatorNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA4022165111005D550D /* SimulatorNotificationViewController.m */; };
+		9318650B2227867E004C98F5 /* SimulatorZombieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93913836221A5F7300E2B095 /* SimulatorZombieViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9318650C2227867E004C98F5 /* SimulatorBayMaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA382215192A005D550D /* SimulatorBayMaxViewController.m */; };
+		9318650D2227867E004C98F5 /* SimulatorTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2C221407A3005D550D /* SimulatorTestViewModel.m */; };
+		9318650E2227867E004C98F5 /* SimulatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A4002212CABA0011265D /* SimulatorManager.m */; };
+		9318650F2227867E004C98F5 /* SimulatorTestBaeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA292213E297005D550D /* SimulatorTestBaeViewController.m */; };
+		931865102227867E004C98F5 /* SystemMonitorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3EA2211719C0011265D /* SystemMonitorViewModel.m */; };
+		931865112227867E004C98F5 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B22201B3C70011265D /* NavigationController.m */; };
+		931865122227867E004C98F5 /* SettingTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E5221147A60011265D /* SettingTableCellModel.m */; };
+		931865132227867E004C98F5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B92201B41B0011265D /* SettingViewController.m */; };
+		931865142227867E004C98F5 /* SettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DF221111730011265D /* SettingViewModel.m */; };
+		931865152227867E004C98F5 /* SystemMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3D422110D870011265D /* SystemMonitorViewController.m */; };
+		931865162227867E004C98F5 /* SimulatorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA192213BCB4005D550D /* SimulatorDataViewController.m */; };
+		931865172227867E004C98F5 /* SimulatorNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */; };
+		931865182227867E004C98F5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B52201B3ED0011265D /* TabBarController.m */; };
+		931865192227867E004C98F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31621F5706200F30D7D /* AppDelegate.m */; };
+		9318651A2227867E004C98F5 /* SystemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3ED221172070011265D /* SystemDetailViewController.m */; };
+		9318651B2227867E004C98F5 /* SimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3C32201B4520011265D /* SimulatorViewController.m */; };
+		9318651D2227867E004C98F5 /* FSAPMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93995E7621F9C1930064C7DE /* FSAPMSDK.framework */; };
+		9318651F2227867E004C98F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B32021F5706300F30D7D /* LaunchScreen.storyboard */; };
+		931865202227867E004C98F5 /* MonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9303A3CC2201B5020011265D /* MonitorViewController.xib */; };
+		931865212227867E004C98F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31E21F5706300F30D7D /* Assets.xcassets */; };
+		931865222227867E004C98F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31B21F5706200F30D7D /* Main.storyboard */; };
+		933BFA172213B9BF005D550D /* SimulatorNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */; };
+		933BFA1A2213BCB4005D550D /* SimulatorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA192213BCB4005D550D /* SimulatorDataViewController.m */; };
+		933BFA1D2213BCD9005D550D /* SimulatorDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */; };
+		933BFA2A2213E297005D550D /* SimulatorTestBaeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA292213E297005D550D /* SimulatorTestBaeViewController.m */; };
+		933BFA2D221407A3005D550D /* SimulatorTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2C221407A3005D550D /* SimulatorTestViewModel.m */; };
+		933BFA30221501A8005D550D /* SimulatorANRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2F221501A8005D550D /* SimulatorANRViewController.m */; };
+		933BFA3622150A95005D550D /* SimulatorCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA3522150A95005D550D /* SimulatorCrashViewController.m */; };
+		933BFA392215192A005D550D /* SimulatorBayMaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA382215192A005D550D /* SimulatorBayMaxViewController.m */; };
+		933BFA4122165111005D550D /* SimulatorNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA4022165111005D550D /* SimulatorNotificationViewController.m */; };
+		933BFA442216512B005D550D /* SimulatorTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA432216512B005D550D /* SimulatorTimerViewController.m */; };
+		93913837221A5F7300E2B095 /* SimulatorZombieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93913836221A5F7300E2B095 /* SimulatorZombieViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93995E7721F9C1930064C7DE /* FSAPMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93995E7621F9C1930064C7DE /* FSAPMSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9305B32B21F5706300F30D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9305B30A21F5706200F30D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9305B31121F5706200F30D7D;
+			remoteInfo = FSAPMSDKDemo;
+		};
+		9305B33621F5706300F30D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9305B30A21F5706200F30D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9305B31121F5706200F30D7D;
+			remoteInfo = FSAPMSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9303A3B12201B3C70011265D /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		9303A3B22201B3C70011265D /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		9303A3B42201B3ED0011265D /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		9303A3B52201B3ED0011265D /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		9303A3B82201B41B0011265D /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		9303A3B92201B41B0011265D /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		9303A3BD2201B42A0011265D /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9303A3BE2201B42A0011265D /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9303A3C22201B4520011265D /* SimulatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorViewController.h; sourceTree = "<group>"; };
+		9303A3C32201B4520011265D /* SimulatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorViewController.m; sourceTree = "<group>"; };
+		9303A3CC2201B5020011265D /* MonitorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonitorViewController.xib; sourceTree = "<group>"; };
+		9303A3CD2201B5020011265D /* MonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonitorViewController.h; sourceTree = "<group>"; };
+		9303A3CE2201B5020011265D /* MonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorViewController.m; sourceTree = "<group>"; };
+		9303A3D322110D870011265D /* SystemMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemMonitorViewController.h; sourceTree = "<group>"; };
+		9303A3D422110D870011265D /* SystemMonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemMonitorViewController.m; sourceTree = "<group>"; };
+		9303A3DB2211115C0011265D /* AboutViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewModel.h; sourceTree = "<group>"; };
+		9303A3DC2211115C0011265D /* AboutViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewModel.m; sourceTree = "<group>"; };
+		9303A3DE221111730011265D /* SettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewModel.h; sourceTree = "<group>"; };
+		9303A3DF221111730011265D /* SettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewModel.m; sourceTree = "<group>"; };
+		9303A3E1221145750011265D /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		9303A3E2221145750011265D /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		9303A3E4221147A60011265D /* SettingTableCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableCellModel.h; sourceTree = "<group>"; };
+		9303A3E5221147A60011265D /* SettingTableCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableCellModel.m; sourceTree = "<group>"; };
+		9303A3E92211719C0011265D /* SystemMonitorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemMonitorViewModel.h; sourceTree = "<group>"; };
+		9303A3EA2211719C0011265D /* SystemMonitorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemMonitorViewModel.m; sourceTree = "<group>"; };
+		9303A3EC221172070011265D /* SystemDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemDetailViewController.h; sourceTree = "<group>"; };
+		9303A3ED221172070011265D /* SystemDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemDetailViewController.m; sourceTree = "<group>"; };
+		9303A3F32212B6DE0011265D /* SimulatorViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorViewModel.h; sourceTree = "<group>"; };
+		9303A3F42212B6DE0011265D /* SimulatorViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorViewModel.m; sourceTree = "<group>"; };
+		9303A3FC2212C3600011265D /* SimulatorBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorBubbleView.h; sourceTree = "<group>"; };
+		9303A3FD2212C3600011265D /* SimulatorBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorBubbleView.m; sourceTree = "<group>"; };
+		9303A3FF2212CABA0011265D /* SimulatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorManager.h; sourceTree = "<group>"; };
+		9303A4002212CABA0011265D /* SimulatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorManager.m; sourceTree = "<group>"; };
+		9305B31221F5706200F30D7D /* FSAPMSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSAPMSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9305B31521F5706200F30D7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9305B31621F5706200F30D7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9305B31821F5706200F30D7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9305B31921F5706200F30D7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9305B31C21F5706200F30D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9305B31E21F5706300F30D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9305B32121F5706300F30D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9305B32321F5706300F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9305B32421F5706300F30D7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9305B32A21F5706300F30D7D /* FSAPMSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSAPMSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9305B32E21F5706300F30D7D /* FSAPMSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMSDKDemoTests.m; sourceTree = "<group>"; };
+		9305B33021F5706300F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9305B33521F5706300F30D7D /* FSAPMSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSAPMSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9305B33921F5706300F30D7D /* FSAPMSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMSDKDemoUITests.m; sourceTree = "<group>"; };
+		9305B33B21F5706300F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9305B3C121F6DB0100F30D7D /* FSAPMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSAPMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSAPMSDKDemoDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		933BFA152213B9BF005D550D /* SimulatorNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorNetworkViewController.h; sourceTree = "<group>"; };
+		933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorNetworkViewController.m; sourceTree = "<group>"; };
+		933BFA182213BCB4005D550D /* SimulatorDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorDataViewController.h; sourceTree = "<group>"; };
+		933BFA192213BCB4005D550D /* SimulatorDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorDataViewController.m; sourceTree = "<group>"; };
+		933BFA1B2213BCD9005D550D /* SimulatorDataDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorDataDetailViewController.h; sourceTree = "<group>"; };
+		933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorDataDetailViewController.m; sourceTree = "<group>"; };
+		933BFA1E2213BD27005D550D /* SimulatorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorHeader.h; sourceTree = "<group>"; };
+		933BFA282213E297005D550D /* SimulatorTestBaeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorTestBaeViewController.h; sourceTree = "<group>"; };
+		933BFA292213E297005D550D /* SimulatorTestBaeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorTestBaeViewController.m; sourceTree = "<group>"; };
+		933BFA2B221407A3005D550D /* SimulatorTestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorTestViewModel.h; sourceTree = "<group>"; };
+		933BFA2C221407A3005D550D /* SimulatorTestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorTestViewModel.m; sourceTree = "<group>"; };
+		933BFA2E221501A8005D550D /* SimulatorANRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorANRViewController.h; sourceTree = "<group>"; };
+		933BFA2F221501A8005D550D /* SimulatorANRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorANRViewController.m; sourceTree = "<group>"; };
+		933BFA3422150A95005D550D /* SimulatorCrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorCrashViewController.h; sourceTree = "<group>"; };
+		933BFA3522150A95005D550D /* SimulatorCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorCrashViewController.m; sourceTree = "<group>"; };
+		933BFA372215192A005D550D /* SimulatorBayMaxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorBayMaxViewController.h; sourceTree = "<group>"; };
+		933BFA382215192A005D550D /* SimulatorBayMaxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorBayMaxViewController.m; sourceTree = "<group>"; };
+		933BFA3F22165111005D550D /* SimulatorNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorNotificationViewController.h; sourceTree = "<group>"; };
+		933BFA4022165111005D550D /* SimulatorNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorNotificationViewController.m; sourceTree = "<group>"; };
+		933BFA422216512B005D550D /* SimulatorTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorTimerViewController.h; sourceTree = "<group>"; };
+		933BFA432216512B005D550D /* SimulatorTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorTimerViewController.m; sourceTree = "<group>"; };
+		93913835221A5F7300E2B095 /* SimulatorZombieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorZombieViewController.h; sourceTree = "<group>"; };
+		93913836221A5F7300E2B095 /* SimulatorZombieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorZombieViewController.m; sourceTree = "<group>"; };
+		93995E7621F9C1930064C7DE /* FSAPMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSAPMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9305B30F21F5706200F30D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93995E7721F9C1930064C7DE /* FSAPMSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B32721F5706300F30D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B33221F5706300F30D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9318651C2227867E004C98F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9318651D2227867E004C98F5 /* FSAPMSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9303A3A422013F7B0011265D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3DA221110160011265D /* Controller */,
+				9303A3D92211100C0011265D /* View */,
+				9303A3D8221110040011265D /* Model */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9303A3A9220140010011265D /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3F82212C00A0011265D /* Model */,
+				9303A3F72212BFF90011265D /* View */,
+				9303A3F62212BFEF0011265D /* Controller */,
+				9303A3FF2212CABA0011265D /* SimulatorManager.h */,
+				9303A4002212CABA0011265D /* SimulatorManager.m */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		9303A3AA220140390011265D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3B12201B3C70011265D /* NavigationController.h */,
+				9303A3B22201B3C70011265D /* NavigationController.m */,
+				9303A3B42201B3ED0011265D /* TabBarController.h */,
+				9303A3B52201B3ED0011265D /* TabBarController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9303A3CB2201B4EF0011265D /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3CD2201B5020011265D /* MonitorViewController.h */,
+				9303A3CE2201B5020011265D /* MonitorViewController.m */,
+				9303A3CC2201B5020011265D /* MonitorViewController.xib */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		9303A3D8221110040011265D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3DE221111730011265D /* SettingViewModel.h */,
+				9303A3DF221111730011265D /* SettingViewModel.m */,
+				9303A3DB2211115C0011265D /* AboutViewModel.h */,
+				9303A3DC2211115C0011265D /* AboutViewModel.m */,
+				9303A3E4221147A60011265D /* SettingTableCellModel.h */,
+				9303A3E5221147A60011265D /* SettingTableCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9303A3D92211100C0011265D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3E1221145750011265D /* SettingTableViewCell.h */,
+				9303A3E2221145750011265D /* SettingTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9303A3DA221110160011265D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3B82201B41B0011265D /* SettingViewController.h */,
+				9303A3B92201B41B0011265D /* SettingViewController.m */,
+				9303A3BD2201B42A0011265D /* AboutViewController.h */,
+				9303A3BE2201B42A0011265D /* AboutViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9303A3E7221171650011265D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3D322110D870011265D /* SystemMonitorViewController.h */,
+				9303A3D422110D870011265D /* SystemMonitorViewController.m */,
+				9303A3EC221172070011265D /* SystemDetailViewController.h */,
+				9303A3ED221172070011265D /* SystemDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9303A3E8221171800011265D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3E92211719C0011265D /* SystemMonitorViewModel.h */,
+				9303A3EA2211719C0011265D /* SystemMonitorViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9303A3EF2212A9430011265D /* BayMaxProtector */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA372215192A005D550D /* SimulatorBayMaxViewController.h */,
+				933BFA382215192A005D550D /* SimulatorBayMaxViewController.m */,
+				933BFA3F22165111005D550D /* SimulatorNotificationViewController.h */,
+				933BFA4022165111005D550D /* SimulatorNotificationViewController.m */,
+				933BFA422216512B005D550D /* SimulatorTimerViewController.h */,
+				933BFA432216512B005D550D /* SimulatorTimerViewController.m */,
+				93913835221A5F7300E2B095 /* SimulatorZombieViewController.h */,
+				93913836221A5F7300E2B095 /* SimulatorZombieViewController.m */,
+			);
+			path = BayMaxProtector;
+			sourceTree = "<group>";
+		};
+		9303A3F02212A94F0011265D /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA3422150A95005D550D /* SimulatorCrashViewController.h */,
+				933BFA3522150A95005D550D /* SimulatorCrashViewController.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		9303A3F12212A95B0011265D /* ANR */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA2E221501A8005D550D /* SimulatorANRViewController.h */,
+				933BFA2F221501A8005D550D /* SimulatorANRViewController.m */,
+			);
+			path = ANR;
+			sourceTree = "<group>";
+		};
+		9303A3F22212A9710011265D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA152213B9BF005D550D /* SimulatorNetworkViewController.h */,
+				933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9303A3F62212BFEF0011265D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA3B22157789005D550D /* Data */,
+				933BFA3A2215776D005D550D /* Test */,
+				9303A3C22201B4520011265D /* SimulatorViewController.h */,
+				9303A3C32201B4520011265D /* SimulatorViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9303A3F72212BFF90011265D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3FC2212C3600011265D /* SimulatorBubbleView.h */,
+				9303A3FD2212C3600011265D /* SimulatorBubbleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9303A3F82212C00A0011265D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA1E2213BD27005D550D /* SimulatorHeader.h */,
+				9303A3F32212B6DE0011265D /* SimulatorViewModel.h */,
+				9303A3F42212B6DE0011265D /* SimulatorViewModel.m */,
+				933BFA2B221407A3005D550D /* SimulatorTestViewModel.h */,
+				933BFA2C221407A3005D550D /* SimulatorTestViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9305B30921F5706200F30D7D = {
+			isa = PBXGroup;
+			children = (
+				9305B31421F5706200F30D7D /* FSAPMSDKDemo */,
+				9305B32D21F5706300F30D7D /* FSAPMSDKDemoTests */,
+				9305B33821F5706300F30D7D /* FSAPMSDKDemoUITests */,
+				9305B31321F5706200F30D7D /* Products */,
+				9305B3C021F6DB0000F30D7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9305B31321F5706200F30D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9305B31221F5706200F30D7D /* FSAPMSDKDemo.app */,
+				9305B32A21F5706300F30D7D /* FSAPMSDKDemoTests.xctest */,
+				9305B33521F5706300F30D7D /* FSAPMSDKDemoUITests.xctest */,
+				931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9305B31421F5706200F30D7D /* FSAPMSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3C821F6EAB300F30D7D /* Main */,
+				9305B31521F5706200F30D7D /* AppDelegate.h */,
+				9305B31621F5706200F30D7D /* AppDelegate.m */,
+				9305B31821F5706200F30D7D /* ViewController.h */,
+				9305B31921F5706200F30D7D /* ViewController.m */,
+				9305B31B21F5706200F30D7D /* Main.storyboard */,
+				9305B31E21F5706300F30D7D /* Assets.xcassets */,
+				9305B32021F5706300F30D7D /* LaunchScreen.storyboard */,
+				9305B32321F5706300F30D7D /* Info.plist */,
+				9305B32421F5706300F30D7D /* main.m */,
+			);
+			path = FSAPMSDKDemo;
+			sourceTree = "<group>";
+		};
+		9305B32D21F5706300F30D7D /* FSAPMSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9305B32E21F5706300F30D7D /* FSAPMSDKDemoTests.m */,
+				9305B33021F5706300F30D7D /* Info.plist */,
+			);
+			path = FSAPMSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		9305B33821F5706300F30D7D /* FSAPMSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9305B33921F5706300F30D7D /* FSAPMSDKDemoUITests.m */,
+				9305B33B21F5706300F30D7D /* Info.plist */,
+			);
+			path = FSAPMSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		9305B3C021F6DB0000F30D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93995E7621F9C1930064C7DE /* FSAPMSDK.framework */,
+				9305B3C121F6DB0100F30D7D /* FSAPMSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9305B3C821F6EAB300F30D7D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3AA220140390011265D /* TabBar */,
+				9303A3A9220140010011265D /* Simulator */,
+				9303A3A422013F7B0011265D /* Setting */,
+				9305B3C921F6EADF00F30D7D /* System */,
+				9303A3CB2201B4EF0011265D /* Monitor */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9305B3C921F6EADF00F30D7D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3E8221171800011265D /* Model */,
+				9303A3E7221171650011265D /* Controller */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		933BFA3A2215776D005D550D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3F12212A95B0011265D /* ANR */,
+				9303A3EF2212A9430011265D /* BayMaxProtector */,
+				9303A3F02212A94F0011265D /* Crash */,
+				9303A3F22212A9710011265D /* Network */,
+				933BFA282213E297005D550D /* SimulatorTestBaeViewController.h */,
+				933BFA292213E297005D550D /* SimulatorTestBaeViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		933BFA3B22157789005D550D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				933BFA182213BCB4005D550D /* SimulatorDataViewController.h */,
+				933BFA192213BCB4005D550D /* SimulatorDataViewController.m */,
+				933BFA1B2213BCD9005D550D /* SimulatorDataDetailViewController.h */,
+				933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9305B31121F5706200F30D7D /* FSAPMSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9305B33E21F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemo" */;
+			buildPhases = (
+				9305B30E21F5706200F30D7D /* Sources */,
+				9305B30F21F5706200F30D7D /* Frameworks */,
+				9305B31021F5706200F30D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSAPMSDKDemo;
+			productName = FSAPMSDKDemo;
+			productReference = 9305B31221F5706200F30D7D /* FSAPMSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9305B32921F5706300F30D7D /* FSAPMSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9305B34121F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoTests" */;
+			buildPhases = (
+				9305B32621F5706300F30D7D /* Sources */,
+				9305B32721F5706300F30D7D /* Frameworks */,
+				9305B32821F5706300F30D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9305B32C21F5706300F30D7D /* PBXTargetDependency */,
+			);
+			name = FSAPMSDKDemoTests;
+			productName = FSAPMSDKDemoTests;
+			productReference = 9305B32A21F5706300F30D7D /* FSAPMSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9305B33421F5706300F30D7D /* FSAPMSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9305B34421F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoUITests" */;
+			buildPhases = (
+				9305B33121F5706300F30D7D /* Sources */,
+				9305B33221F5706300F30D7D /* Frameworks */,
+				9305B33321F5706300F30D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9305B33721F5706300F30D7D /* PBXTargetDependency */,
+			);
+			name = FSAPMSDKDemoUITests;
+			productName = FSAPMSDKDemoUITests;
+			productReference = 9305B33521F5706300F30D7D /* FSAPMSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		931864FC2227867E004C98F5 /* FSAPMSDKDemoDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931865232227867E004C98F5 /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoDev" */;
+			buildPhases = (
+				931864FD2227867E004C98F5 /* Sources */,
+				9318651C2227867E004C98F5 /* Frameworks */,
+				9318651E2227867E004C98F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSAPMSDKDemoDev;
+			productName = FSAPMSDKDemo;
+			productReference = 931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9305B30A21F5706200F30D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 2345;
+				TargetAttributes = {
+					9305B31121F5706200F30D7D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9305B32921F5706300F30D7D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9305B31121F5706200F30D7D;
+					};
+					9305B33421F5706300F30D7D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9305B31121F5706200F30D7D;
+					};
+				};
+			};
+			buildConfigurationList = 9305B30D21F5706200F30D7D /* Build configuration list for PBXProject "FSAPMSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9305B30921F5706200F30D7D;
+			productRefGroup = 9305B31321F5706200F30D7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9305B31121F5706200F30D7D /* FSAPMSDKDemo */,
+				931864FC2227867E004C98F5 /* FSAPMSDKDemoDev */,
+				9305B32921F5706300F30D7D /* FSAPMSDKDemoTests */,
+				9305B33421F5706300F30D7D /* FSAPMSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9305B31021F5706200F30D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B32221F5706300F30D7D /* LaunchScreen.storyboard in Resources */,
+				9303A3CF2201B5020011265D /* MonitorViewController.xib in Resources */,
+				9305B31F21F5706300F30D7D /* Assets.xcassets in Resources */,
+				9305B31D21F5706200F30D7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B32821F5706300F30D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B33321F5706300F30D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9318651E2227867E004C98F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9318651F2227867E004C98F5 /* LaunchScreen.storyboard in Resources */,
+				931865202227867E004C98F5 /* MonitorViewController.xib in Resources */,
+				931865212227867E004C98F5 /* Assets.xcassets in Resources */,
+				931865222227867E004C98F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9305B30E21F5706200F30D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933BFA1D2213BCD9005D550D /* SimulatorDataDetailViewController.m in Sources */,
+				9305B31A21F5706200F30D7D /* ViewController.m in Sources */,
+				9305B32521F5706300F30D7D /* main.m in Sources */,
+				933BFA3622150A95005D550D /* SimulatorCrashViewController.m in Sources */,
+				9303A3F52212B6DE0011265D /* SimulatorViewModel.m in Sources */,
+				9303A3DD2211115C0011265D /* AboutViewModel.m in Sources */,
+				9303A3E3221145750011265D /* SettingTableViewCell.m in Sources */,
+				9303A3C02201B42A0011265D /* AboutViewController.m in Sources */,
+				9303A3FE2212C3600011265D /* SimulatorBubbleView.m in Sources */,
+				9303A3D02201B5020011265D /* MonitorViewController.m in Sources */,
+				933BFA442216512B005D550D /* SimulatorTimerViewController.m in Sources */,
+				933BFA30221501A8005D550D /* SimulatorANRViewController.m in Sources */,
+				933BFA4122165111005D550D /* SimulatorNotificationViewController.m in Sources */,
+				93913837221A5F7300E2B095 /* SimulatorZombieViewController.m in Sources */,
+				933BFA392215192A005D550D /* SimulatorBayMaxViewController.m in Sources */,
+				933BFA2D221407A3005D550D /* SimulatorTestViewModel.m in Sources */,
+				9303A4012212CABA0011265D /* SimulatorManager.m in Sources */,
+				933BFA2A2213E297005D550D /* SimulatorTestBaeViewController.m in Sources */,
+				9303A3EB2211719C0011265D /* SystemMonitorViewModel.m in Sources */,
+				9303A3B32201B3C70011265D /* NavigationController.m in Sources */,
+				9303A3E6221147A60011265D /* SettingTableCellModel.m in Sources */,
+				9303A3BB2201B41B0011265D /* SettingViewController.m in Sources */,
+				9303A3E0221111730011265D /* SettingViewModel.m in Sources */,
+				9303A3D622110D870011265D /* SystemMonitorViewController.m in Sources */,
+				933BFA1A2213BCB4005D550D /* SimulatorDataViewController.m in Sources */,
+				933BFA172213B9BF005D550D /* SimulatorNetworkViewController.m in Sources */,
+				9303A3B62201B3ED0011265D /* TabBarController.m in Sources */,
+				9305B31721F5706200F30D7D /* AppDelegate.m in Sources */,
+				9303A3EE221172070011265D /* SystemDetailViewController.m in Sources */,
+				9303A3C52201B4520011265D /* SimulatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B32621F5706300F30D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B32F21F5706300F30D7D /* FSAPMSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B33121F5706300F30D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B33A21F5706300F30D7D /* FSAPMSDKDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931864FD2227867E004C98F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931864FE2227867E004C98F5 /* SimulatorDataDetailViewController.m in Sources */,
+				931864FF2227867E004C98F5 /* ViewController.m in Sources */,
+				931865002227867E004C98F5 /* main.m in Sources */,
+				931865012227867E004C98F5 /* SimulatorCrashViewController.m in Sources */,
+				931865022227867E004C98F5 /* SimulatorViewModel.m in Sources */,
+				931865032227867E004C98F5 /* AboutViewModel.m in Sources */,
+				931865042227867E004C98F5 /* SettingTableViewCell.m in Sources */,
+				931865052227867E004C98F5 /* AboutViewController.m in Sources */,
+				931865062227867E004C98F5 /* SimulatorBubbleView.m in Sources */,
+				931865072227867E004C98F5 /* MonitorViewController.m in Sources */,
+				931865082227867E004C98F5 /* SimulatorTimerViewController.m in Sources */,
+				931865092227867E004C98F5 /* SimulatorANRViewController.m in Sources */,
+				9318650A2227867E004C98F5 /* SimulatorNotificationViewController.m in Sources */,
+				9318650B2227867E004C98F5 /* SimulatorZombieViewController.m in Sources */,
+				9318650C2227867E004C98F5 /* SimulatorBayMaxViewController.m in Sources */,
+				9318650D2227867E004C98F5 /* SimulatorTestViewModel.m in Sources */,
+				9318650E2227867E004C98F5 /* SimulatorManager.m in Sources */,
+				9318650F2227867E004C98F5 /* SimulatorTestBaeViewController.m in Sources */,
+				931865102227867E004C98F5 /* SystemMonitorViewModel.m in Sources */,
+				931865112227867E004C98F5 /* NavigationController.m in Sources */,
+				931865122227867E004C98F5 /* SettingTableCellModel.m in Sources */,
+				931865132227867E004C98F5 /* SettingViewController.m in Sources */,
+				931865142227867E004C98F5 /* SettingViewModel.m in Sources */,
+				931865152227867E004C98F5 /* SystemMonitorViewController.m in Sources */,
+				931865162227867E004C98F5 /* SimulatorDataViewController.m in Sources */,
+				931865172227867E004C98F5 /* SimulatorNetworkViewController.m in Sources */,
+				931865182227867E004C98F5 /* TabBarController.m in Sources */,
+				931865192227867E004C98F5 /* AppDelegate.m in Sources */,
+				9318651A2227867E004C98F5 /* SystemDetailViewController.m in Sources */,
+				9318651B2227867E004C98F5 /* SimulatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9305B32C21F5706300F30D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9305B31121F5706200F30D7D /* FSAPMSDKDemo */;
+			targetProxy = 9305B32B21F5706300F30D7D /* PBXContainerItemProxy */;
+		};
+		9305B33721F5706300F30D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9305B31121F5706200F30D7D /* FSAPMSDKDemo */;
+			targetProxy = 9305B33621F5706300F30D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9305B31B21F5706200F30D7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9305B31C21F5706200F30D7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9305B32021F5706300F30D7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9305B32121F5706300F30D7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9305B33C21F5706300F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9305B33D21F5706300F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9305B33F21F5706300F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FGLAV3BX2;
+				INFOPLIST_FILE = FSAPMSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9305B34021F5706300F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FGLAV3BX2;
+				INFOPLIST_FILE = FSAPMSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9305B34221F5706300F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSAPMSDKDemo.app/FSAPMSDKDemo";
+			};
+			name = Debug;
+		};
+		9305B34321F5706300F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSAPMSDKDemo.app/FSAPMSDKDemo";
+			};
+			name = Release;
+		};
+		9305B34521F5706300F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSAPMSDKDemo;
+			};
+			name = Debug;
+		};
+		9305B34621F5706300F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSAPMSDKDemo;
+			};
+			name = Release;
+		};
+		931865242227867E004C98F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHDWRXPG6N;
+				INFOPLIST_FILE = "$(SRCROOT)/FSAPMSDKDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		931865252227867E004C98F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHDWRXPG6N;
+				INFOPLIST_FILE = "$(SRCROOT)/FSAPMSDKDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9305B30D21F5706200F30D7D /* Build configuration list for PBXProject "FSAPMSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B33C21F5706300F30D7D /* Debug */,
+				9305B33D21F5706300F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B33E21F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B33F21F5706300F30D7D /* Debug */,
+				9305B34021F5706300F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B34121F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B34221F5706300F30D7D /* Debug */,
+				9305B34321F5706300F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B34421F5706300F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B34521F5706300F30D7D /* Debug */,
+				9305B34621F5706300F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931865232227867E004C98F5 /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931865242227867E004C98F5 /* Debug */,
+				931865252227867E004C98F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9305B30A21F5706200F30D7D /* Project object */;
+}

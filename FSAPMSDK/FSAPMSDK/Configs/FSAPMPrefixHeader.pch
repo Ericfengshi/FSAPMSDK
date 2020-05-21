@@ -1,0 +1,31 @@
+//
+//  FSAPMPrefixHeader.pch
+//  FSAPMSDK
+//
+//  Created by fengs on 2018/11/7.
+//  Copyright © 2018 fengs. All rights reserved.
+//
+
+#ifndef FSAPMPrefixHeader_pch
+#define FSAPMPrefixHeader_pch
+
+#pragma mark - 系统类库
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#pragma mark - Public
+#import "FSAPMLog.h"
+
+#pragma mark - Configs
+#import "FSAPMAPIDefine.h"
+#import "FSAPMGlobalDefine.h"
+#import "FSAPMNotificationDefine.h"
+// 脚本将所有库加上前缀
+#import "FSAPMSDK+Namespace.h"
+
+#pragma mark - Category
+
+#pragma mark - Util
+//#import "FSAPMCommon.h"
+
+#endif /* FSAPMPrefixHeader_pch */

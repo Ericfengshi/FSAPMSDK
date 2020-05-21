@@ -1,0 +1,12 @@
+//
+//  FSAPMSDK-Project.release.xcconfig
+//  FSAPMSDK
+//
+//  Created by fengs on 2018/11/7.
+//  Copyright © 2018 fengs. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "FSAPMSDK-Project.xcconfig"

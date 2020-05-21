@@ -1,0 +1,1435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9303A2CA21FE93E20011265D /* FSAPMSDK-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9303A2CD21FE93E30011265D /* Build configuration list for PBXAggregateTarget "FSAPMSDK-Universal" */;
+			buildPhases = (
+				9303A2D021FE94C20011265D /* ShellScript */,
+			);
+			dependencies = (
+				9303A2CF21FE94890011265D /* PBXTargetDependency */,
+			);
+			name = "FSAPMSDK-Universal";
+			productName = "FSAPMSDK-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		9303A2D921FE95DC0011265D /* FSAPMSDKVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2D821FE95DC0011265D /* FSAPMSDKVendor.m */; };
+		9303A2DA21FE95DC0011265D /* FSAPMSDKVendor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9303A2D721FE95DC0011265D /* FSAPMSDKVendor.h */; };
+		9303A30B21FE96110011265D /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E121FE96110011265D /* NSNotificationCenter+ClearNotification.m */; };
+		9303A30C21FE96110011265D /* NSNotificationCenter+ClearNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E121FE96110011265D /* NSNotificationCenter+ClearNotification.m */; };
+		9303A30D21FE96110011265D /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E221FE96110011265D /* NSAttributedString+AttributedStringHook.m */; };
+		9303A30E21FE96110011265D /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E221FE96110011265D /* NSAttributedString+AttributedStringHook.m */; };
+		9303A30F21FE96110011265D /* NSTimer+CleanTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E321FE96110011265D /* NSTimer+CleanTimer.h */; };
+		9303A31021FE96110011265D /* NSSet+SetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E421FE96110011265D /* NSSet+SetHook.h */; };
+		9303A31121FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E521FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.h */; };
+		9303A31221FE96110011265D /* NSMutableSet+MutableSetHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E621FE96110011265D /* NSMutableSet+MutableSetHook.h */; };
+		9303A31321FE96110011265D /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E721FE96110011265D /* NSMutableString+MutableStringHook.m */; };
+		9303A31421FE96110011265D /* NSMutableString+MutableStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2E721FE96110011265D /* NSMutableString+MutableStringHook.m */; };
+		9303A31521FE96110011265D /* NSString+StringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E821FE96110011265D /* NSString+StringHook.h */; };
+		9303A31621FE96110011265D /* NSNotificationCenter+ClearNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2E921FE96110011265D /* NSNotificationCenter+ClearNotification.h */; };
+		9303A31721FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EA21FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
+		9303A31821FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EA21FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
+		9303A31921FE96110011265D /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EB21FE96110011265D /* NSSet+SetHook.m */; };
+		9303A31A21FE96110011265D /* NSSet+SetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EB21FE96110011265D /* NSSet+SetHook.m */; };
+		9303A31B21FE96110011265D /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EC21FE96110011265D /* NSTimer+CleanTimer.m */; };
+		9303A31C21FE96110011265D /* NSTimer+CleanTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EC21FE96110011265D /* NSTimer+CleanTimer.m */; };
+		9303A31D21FE96110011265D /* NSAttributedString+AttributedStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2ED21FE96110011265D /* NSAttributedString+AttributedStringHook.h */; };
+		9303A31E21FE96110011265D /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EE21FE96110011265D /* NSMutableSet+MutableSetHook.m */; };
+		9303A31F21FE96110011265D /* NSMutableSet+MutableSetHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EE21FE96110011265D /* NSMutableSet+MutableSetHook.m */; };
+		9303A32021FE96110011265D /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EF21FE96110011265D /* NSString+StringHook.m */; };
+		9303A32121FE96110011265D /* NSString+StringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2EF21FE96110011265D /* NSString+StringHook.m */; };
+		9303A32221FE96110011265D /* NSMutableString+MutableStringHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2F021FE96110011265D /* NSMutableString+MutableStringHook.h */; };
+		9303A32321FE96110011265D /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F221FE96110011265D /* NSObject+DeallocBlock.m */; };
+		9303A32421FE96110011265D /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F221FE96110011265D /* NSObject+DeallocBlock.m */; };
+		9303A32521FE96110011265D /* NSObject+DeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2F321FE96110011265D /* NSObject+DeallocBlock.h */; };
+		9303A32621FE96110011265D /* NSObject+KVOCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2F521FE96110011265D /* NSObject+KVOCrash.h */; };
+		9303A32721FE96110011265D /* NSArray+ArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2F621FE96110011265D /* NSArray+ArrayHook.h */; };
+		9303A32821FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2F721FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.h */; };
+		9303A32921FE96110011265D /* NSDictionary+DictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F821FE96110011265D /* NSDictionary+DictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32A21FE96110011265D /* NSDictionary+DictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F821FE96110011265D /* NSDictionary+DictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32B21FE96110011265D /* NSMutableArray+MutableArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F921FE96110011265D /* NSMutableArray+MutableArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32C21FE96110011265D /* NSMutableArray+MutableArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2F921FE96110011265D /* NSMutableArray+MutableArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32D21FE96110011265D /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FA21FE96110011265D /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32E21FE96110011265D /* NSObject+ZombieHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FA21FE96110011265D /* NSObject+ZombieHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A32F21FE96110011265D /* NSObject+UnrecognizedSelectorHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2FB21FE96110011265D /* NSObject+UnrecognizedSelectorHook.h */; };
+		9303A33021FE96110011265D /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FC21FE96110011265D /* NSObject+KVOCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33121FE96110011265D /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FC21FE96110011265D /* NSObject+KVOCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33221FE96110011265D /* NSDictionary+DictionaryHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A2FD21FE96110011265D /* NSDictionary+DictionaryHook.h */; };
+		9303A33321FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FE21FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33421FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FE21FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33521FE96110011265D /* NSArray+ArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FF21FE96110011265D /* NSArray+ArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33621FE96110011265D /* NSArray+ArrayHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A2FF21FE96110011265D /* NSArray+ArrayHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33721FE96110011265D /* NSObject+UnrecognizedSelectorHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30021FE96110011265D /* NSObject+UnrecognizedSelectorHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33821FE96110011265D /* NSObject+UnrecognizedSelectorHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30021FE96110011265D /* NSObject+UnrecognizedSelectorHook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9303A33921FE96110011265D /* NSObject+ZombieHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A30121FE96110011265D /* NSObject+ZombieHook.h */; };
+		9303A33A21FE96110011265D /* NSMutableArray+MutableArrayHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A30221FE96110011265D /* NSMutableArray+MutableArrayHook.h */; };
+		9303A33B21FE96110011265D /* NSObject+SwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30421FE96110011265D /* NSObject+SwizzleHook.m */; };
+		9303A33C21FE96110011265D /* NSObject+SwizzleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30421FE96110011265D /* NSObject+SwizzleHook.m */; };
+		9303A33D21FE96110011265D /* NSObject+SwizzleHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A30521FE96110011265D /* NSObject+SwizzleHook.h */; };
+		9303A33E21FE96110011265D /* JJExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30721FE96110011265D /* JJExceptionProxy.m */; };
+		9303A33F21FE96110011265D /* JJExceptionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30721FE96110011265D /* JJExceptionProxy.m */; };
+		9303A34021FE96110011265D /* JJException.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30821FE96110011265D /* JJException.m */; };
+		9303A34121FE96110011265D /* JJException.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A30821FE96110011265D /* JJException.m */; };
+		9303A34221FE96110011265D /* JJExceptionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A30921FE96110011265D /* JJExceptionProxy.h */; };
+		9303A34321FE96110011265D /* JJException.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A30A21FE96110011265D /* JJException.h */; };
+		9303A35921FF00170011265D /* PPMappingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34721FF00170011265D /* PPMappingUtil.m */; };
+		9303A35A21FF00170011265D /* PPMappingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34721FF00170011265D /* PPMappingUtil.m */; };
+		9303A35B21FF00170011265D /* PPWeakTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A34821FF00170011265D /* PPWeakTimer.h */; };
+		9303A35C21FF00170011265D /* PPMappingUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A34921FF00170011265D /* PPMappingUtil.h */; };
+		9303A35D21FF00170011265D /* PPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34A21FF00170011265D /* PPWeakTimer.m */; };
+		9303A35E21FF00170011265D /* PPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34A21FF00170011265D /* PPWeakTimer.m */; };
+		9303A35F21FF00170011265D /* PPDNSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34B21FF00170011265D /* PPDNSReporter.m */; };
+		9303A36021FF00170011265D /* PPDNSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34B21FF00170011265D /* PPDNSReporter.m */; };
+		9303A36121FF00170011265D /* PPDomainRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34C21FF00170011265D /* PPDomainRequestResult.m */; };
+		9303A36221FF00170011265D /* PPDomainRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34C21FF00170011265D /* PPDomainRequestResult.m */; };
+		9303A36321FF00170011265D /* PPIPValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34D21FF00170011265D /* PPIPValidator.m */; };
+		9303A36421FF00170011265D /* PPIPValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A34D21FF00170011265D /* PPIPValidator.m */; };
+		9303A36521FF00170011265D /* PPDNSMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A34E21FF00170011265D /* PPDNSMapping.h */; };
+		9303A36621FF00170011265D /* PPDNSMappingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A34F21FF00170011265D /* PPDNSMappingManager.h */; };
+		9303A36721FF00170011265D /* PPDNSReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A35021FF00170011265D /* PPDNSReporter.h */; };
+		9303A36821FF00170011265D /* PPMappingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A35221FF00170011265D /* PPMappingNode.h */; };
+		9303A36921FF00170011265D /* PPResolvedUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35321FF00170011265D /* PPResolvedUrl.m */; };
+		9303A36A21FF00170011265D /* PPResolvedUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35321FF00170011265D /* PPResolvedUrl.m */; };
+		9303A36B21FF00170011265D /* PPResolvedUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A35421FF00170011265D /* PPResolvedUrl.h */; };
+		9303A36C21FF00170011265D /* PPMappingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35521FF00170011265D /* PPMappingNode.m */; };
+		9303A36D21FF00170011265D /* PPMappingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35521FF00170011265D /* PPMappingNode.m */; };
+		9303A36E21FF00170011265D /* PPIPValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A35621FF00170011265D /* PPIPValidator.h */; };
+		9303A36F21FF00170011265D /* PPDomainRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A35721FF00170011265D /* PPDomainRequestResult.h */; };
+		9303A37021FF00170011265D /* PPDNSMappingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35821FF00170011265D /* PPDNSMappingManager.m */; };
+		9303A37121FF00170011265D /* PPDNSMappingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A35821FF00170011265D /* PPDNSMappingManager.m */; };
+		9303A37A21FF01960011265D /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A37821FF01960011265D /* Reachability.h */; };
+		9303A37B21FF01960011265D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A37921FF01960011265D /* Reachability.m */; };
+		9303A37C21FF01960011265D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A37921FF01960011265D /* Reachability.m */; };
+		9303A38021FF05A70011265D /* FSAPMHttpDNS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A37E21FF05A70011265D /* FSAPMHttpDNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A38121FF05A70011265D /* FSAPMHttpDNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A37F21FF05A70011265D /* FSAPMHttpDNS.m */; };
+		9303A38522005CFA0011265D /* FSURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A38322005CFA0011265D /* FSURLProtocol.h */; };
+		9303A38622005CFA0011265D /* FSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A38422005CFA0011265D /* FSURLProtocol.m */; };
+		9303A38922006AC80011265D /* NSURLSessionConfiguration+FSAPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A38722006AC80011265D /* NSURLSessionConfiguration+FSAPM.h */; };
+		9303A38A22006AC80011265D /* NSURLSessionConfiguration+FSAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A38822006AC80011265D /* NSURLSessionConfiguration+FSAPM.m */; };
+		9303A38D22006C6C0011265D /* FSNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A38B22006C6C0011265D /* FSNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A38E22006C6C0011265D /* FSNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A38C22006C6C0011265D /* FSNetworkInfo.m */; };
+		9303A39122006DCA0011265D /* FSNetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A38F22006DCA0011265D /* FSNetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A39222006DCA0011265D /* FSNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A39022006DCA0011265D /* FSNetworkMonitor.m */; };
+		9303A3952200711D0011265D /* FSBackTraceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A3932200711D0011265D /* FSBackTraceInfo.h */; };
+		9303A3962200711D0011265D /* FSBackTraceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3942200711D0011265D /* FSBackTraceInfo.m */; };
+		9303A399220134850011265D /* FSNetworkFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A397220134850011265D /* FSNetworkFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A39A220134850011265D /* FSNetworkFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A398220134850011265D /* FSNetworkFlow.m */; };
+		9303A39E220137FC0011265D /* FSCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A39C220137FC0011265D /* FSCrashMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A39F220137FC0011265D /* FSCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A39D220137FC0011265D /* FSCrashMonitor.m */; };
+		9303A3A2220138A00011265D /* FSCrashInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A3A0220138A00011265D /* FSCrashInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A3A3220138A00011265D /* FSCrashInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3A1220138A00011265D /* FSCrashInfo.m */; };
+		9303A3A722013FEE0011265D /* FSAPMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A3A522013FEE0011265D /* FSAPMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A3A822013FEE0011265D /* FSAPMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3A622013FEE0011265D /* FSAPMManager.m */; };
+		9303A3AE220141970011265D /* FSSystemMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303A3AC220141970011265D /* FSSystemMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9303A3AF220141970011265D /* FSSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3AD220141970011265D /* FSSystemMonitor.m */; };
+		9305B37F21F58B0000F30D7D /* FSAPMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305B37521F58B0000F30D7D /* FSAPMSDK.framework */; };
+		9305B38421F58B0000F30D7D /* FSAPMSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B38321F58B0000F30D7D /* FSAPMSDKTests.m */; };
+		9305B38621F58B0000F30D7D /* FSAPMSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B37821F58B0000F30D7D /* FSAPMSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B39D21F58F3700F30D7D /* FSAPMSDK+Namespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B39321F58F3700F30D7D /* FSAPMSDK+Namespace.h */; };
+		9305B39E21F58F3700F30D7D /* FSAPMPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9305B39421F58F3700F30D7D /* FSAPMPrefixHeader.pch */; };
+		9305B3A021F58F3700F30D7D /* FSAPMAPIDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B39621F58F3700F30D7D /* FSAPMAPIDefine.h */; };
+		9305B3A321F58F3700F30D7D /* FSAPMGlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B39921F58F3700F30D7D /* FSAPMGlobalDefine.h */; };
+		9305B3B221F59B9300F30D7D /* FSAPMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3B021F59B9300F30D7D /* FSAPMLog.h */; };
+		9305B3B321F59B9300F30D7D /* FSAPMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3B121F59B9300F30D7D /* FSAPMLog.m */; };
+		9305B3BE21F6BE3300F30D7D /* FSCPUUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3BC21F6BE3300F30D7D /* FSCPUUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3BF21F6BE3300F30D7D /* FSCPUUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3BD21F6BE3300F30D7D /* FSCPUUsage.m */; };
+		9305B3CD21F6F3E700F30D7D /* FSWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3CB21F6F3E700F30D7D /* FSWeakProxy.h */; };
+		9305B3CE21F6F3E700F30D7D /* FSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3CC21F6F3E700F30D7D /* FSWeakProxy.m */; };
+		9305B3D121F71C7400F30D7D /* FSRAMUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3CF21F71C7400F30D7D /* FSRAMUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3D221F71C7400F30D7D /* FSRAMUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3D021F71C7400F30D7D /* FSRAMUsage.m */; };
+		9305B3D521F71C9300F30D7D /* FSDiskUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3D321F71C9300F30D7D /* FSDiskUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3D621F71C9300F30D7D /* FSDiskUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3D421F71C9300F30D7D /* FSDiskUsage.m */; };
+		9305B3D921F71DBF00F30D7D /* FSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3D721F71DBF00F30D7D /* FSDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3DA21F71DBF00F30D7D /* FSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3D821F71DBF00F30D7D /* FSDeviceInfo.m */; };
+		9305B3DD21F71E9900F30D7D /* FSFPSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3DB21F71E9900F30D7D /* FSFPSInfo.h */; };
+		9305B3DE21F71E9900F30D7D /* FSFPSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3DC21F71E9900F30D7D /* FSFPSInfo.m */; };
+		9305B3E121F71EAD00F30D7D /* FSBatteryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3DF21F71EAD00F30D7D /* FSBatteryInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3E221F71EAD00F30D7D /* FSBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3E021F71EAD00F30D7D /* FSBatteryInfo.m */; };
+		9305B3E521F72B6A00F30D7D /* FSBatteryMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3E321F72B6A00F30D7D /* FSBatteryMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3E621F72B6A00F30D7D /* FSBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3E421F72B6A00F30D7D /* FSBatteryMonitor.m */; };
+		9305B3E921F72B8200F30D7D /* FSFPSMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9305B3E721F72B8200F30D7D /* FSFPSMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305B3EA21F72B8200F30D7D /* FSFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B3E821F72B8200F30D7D /* FSFPSMonitor.m */; };
+		93995E6C21F816320064C7DE /* FSHardcodeDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E6A21F816320064C7DE /* FSHardcodeDeviceInfo.h */; };
+		93995E6D21F816320064C7DE /* FSHardcodeDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E6B21F816320064C7DE /* FSHardcodeDeviceInfo.m */; };
+		93995E7421F9BDEC0064C7DE /* FSStartupTimeMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E7221F9BDEC0064C7DE /* FSStartupTimeMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93995E7521F9BDEC0064C7DE /* FSStartupTimeMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E7321F9BDEC0064C7DE /* FSStartupTimeMonitor.m */; };
+		93995E7A21F9C4CC0064C7DE /* FSANRMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E7821F9C4CC0064C7DE /* FSANRMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93995E7B21F9C4CC0064C7DE /* FSANRMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E7921F9C4CC0064C7DE /* FSANRMonitor.m */; };
+		93995E7E21F9C5260064C7DE /* FSANRInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E7C21F9C5260064C7DE /* FSANRInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93995E7F21F9C5260064C7DE /* FSANRInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E7D21F9C5260064C7DE /* FSANRInfo.m */; };
+		93995E8221FADCDF0064C7DE /* FSBayMaxProtector.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E8021FADCDF0064C7DE /* FSBayMaxProtector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93995E8321FADCDF0064C7DE /* FSBayMaxProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E8121FADCDF0064C7DE /* FSBayMaxProtector.m */; };
+		93995E8621FAEBA30064C7DE /* FSBayMaxCrashInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E8421FAEBA30064C7DE /* FSBayMaxCrashInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93995E8721FAEBA30064C7DE /* FSBayMaxCrashInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E8521FAEBA30064C7DE /* FSBayMaxCrashInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9303A2CE21FE94890011265D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9305B36C21F58B0000F30D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9305B37421F58B0000F30D7D;
+			remoteInfo = FSAPMSDK;
+		};
+		9305B38021F58B0000F30D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9305B36C21F58B0000F30D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9305B37421F58B0000F30D7D;
+			remoteInfo = FSAPMSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9303A2D321FE95DC0011265D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9303A2DA21FE95DC0011265D /* FSAPMSDKVendor.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9303A2D521FE95DC0011265D /* libFSAPMSDKVendor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFSAPMSDKVendor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9303A2D721FE95DC0011265D /* FSAPMSDKVendor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMSDKVendor.h; sourceTree = "<group>"; };
+		9303A2D821FE95DC0011265D /* FSAPMSDKVendor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMSDKVendor.m; sourceTree = "<group>"; };
+		9303A2E121FE96110011265D /* NSNotificationCenter+ClearNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+ClearNotification.m"; sourceTree = "<group>"; };
+		9303A2E221FE96110011265D /* NSAttributedString+AttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringHook.m"; sourceTree = "<group>"; };
+		9303A2E321FE96110011265D /* NSTimer+CleanTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CleanTimer.h"; sourceTree = "<group>"; };
+		9303A2E421FE96110011265D /* NSSet+SetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+SetHook.h"; sourceTree = "<group>"; };
+		9303A2E521FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MutableAttributedStringHook.h"; sourceTree = "<group>"; };
+		9303A2E621FE96110011265D /* NSMutableSet+MutableSetHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+MutableSetHook.h"; sourceTree = "<group>"; };
+		9303A2E721FE96110011265D /* NSMutableString+MutableStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+MutableStringHook.m"; sourceTree = "<group>"; };
+		9303A2E821FE96110011265D /* NSString+StringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHook.h"; sourceTree = "<group>"; };
+		9303A2E921FE96110011265D /* NSNotificationCenter+ClearNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ClearNotification.h"; sourceTree = "<group>"; };
+		9303A2EA21FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MutableAttributedStringHook.m"; sourceTree = "<group>"; };
+		9303A2EB21FE96110011265D /* NSSet+SetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+SetHook.m"; sourceTree = "<group>"; };
+		9303A2EC21FE96110011265D /* NSTimer+CleanTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CleanTimer.m"; sourceTree = "<group>"; };
+		9303A2ED21FE96110011265D /* NSAttributedString+AttributedStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringHook.h"; sourceTree = "<group>"; };
+		9303A2EE21FE96110011265D /* NSMutableSet+MutableSetHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+MutableSetHook.m"; sourceTree = "<group>"; };
+		9303A2EF21FE96110011265D /* NSString+StringHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHook.m"; sourceTree = "<group>"; };
+		9303A2F021FE96110011265D /* NSMutableString+MutableStringHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+MutableStringHook.h"; sourceTree = "<group>"; };
+		9303A2F221FE96110011265D /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
+		9303A2F321FE96110011265D /* NSObject+DeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocBlock.h"; sourceTree = "<group>"; };
+		9303A2F521FE96110011265D /* NSObject+KVOCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrash.h"; sourceTree = "<group>"; };
+		9303A2F621FE96110011265D /* NSArray+ArrayHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ArrayHook.h"; sourceTree = "<group>"; };
+		9303A2F721FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MutableDictionaryHook.h"; sourceTree = "<group>"; };
+		9303A2F821FE96110011265D /* NSDictionary+DictionaryHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictionaryHook.m"; sourceTree = "<group>"; };
+		9303A2F921FE96110011265D /* NSMutableArray+MutableArrayHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MutableArrayHook.m"; sourceTree = "<group>"; };
+		9303A2FA21FE96110011265D /* NSObject+ZombieHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZombieHook.m"; sourceTree = "<group>"; };
+		9303A2FB21FE96110011265D /* NSObject+UnrecognizedSelectorHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UnrecognizedSelectorHook.h"; sourceTree = "<group>"; };
+		9303A2FC21FE96110011265D /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
+		9303A2FD21FE96110011265D /* NSDictionary+DictionaryHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictionaryHook.h"; sourceTree = "<group>"; };
+		9303A2FE21FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MutableDictionaryHook.m"; sourceTree = "<group>"; };
+		9303A2FF21FE96110011265D /* NSArray+ArrayHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ArrayHook.m"; sourceTree = "<group>"; };
+		9303A30021FE96110011265D /* NSObject+UnrecognizedSelectorHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UnrecognizedSelectorHook.m"; sourceTree = "<group>"; };
+		9303A30121FE96110011265D /* NSObject+ZombieHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZombieHook.h"; sourceTree = "<group>"; };
+		9303A30221FE96110011265D /* NSMutableArray+MutableArrayHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MutableArrayHook.h"; sourceTree = "<group>"; };
+		9303A30421FE96110011265D /* NSObject+SwizzleHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleHook.m"; sourceTree = "<group>"; };
+		9303A30521FE96110011265D /* NSObject+SwizzleHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleHook.h"; sourceTree = "<group>"; };
+		9303A30721FE96110011265D /* JJExceptionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJExceptionProxy.m; sourceTree = "<group>"; };
+		9303A30821FE96110011265D /* JJException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJException.m; sourceTree = "<group>"; };
+		9303A30921FE96110011265D /* JJExceptionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJExceptionProxy.h; sourceTree = "<group>"; };
+		9303A30A21FE96110011265D /* JJException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJException.h; sourceTree = "<group>"; };
+		9303A34721FF00170011265D /* PPMappingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMappingUtil.m; sourceTree = "<group>"; };
+		9303A34821FF00170011265D /* PPWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWeakTimer.h; sourceTree = "<group>"; };
+		9303A34921FF00170011265D /* PPMappingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMappingUtil.h; sourceTree = "<group>"; };
+		9303A34A21FF00170011265D /* PPWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWeakTimer.m; sourceTree = "<group>"; };
+		9303A34B21FF00170011265D /* PPDNSReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDNSReporter.m; sourceTree = "<group>"; };
+		9303A34C21FF00170011265D /* PPDomainRequestResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDomainRequestResult.m; sourceTree = "<group>"; };
+		9303A34D21FF00170011265D /* PPIPValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPIPValidator.m; sourceTree = "<group>"; };
+		9303A34E21FF00170011265D /* PPDNSMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDNSMapping.h; sourceTree = "<group>"; };
+		9303A34F21FF00170011265D /* PPDNSMappingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDNSMappingManager.h; sourceTree = "<group>"; };
+		9303A35021FF00170011265D /* PPDNSReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDNSReporter.h; sourceTree = "<group>"; };
+		9303A35221FF00170011265D /* PPMappingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMappingNode.h; sourceTree = "<group>"; };
+		9303A35321FF00170011265D /* PPResolvedUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPResolvedUrl.m; sourceTree = "<group>"; };
+		9303A35421FF00170011265D /* PPResolvedUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPResolvedUrl.h; sourceTree = "<group>"; };
+		9303A35521FF00170011265D /* PPMappingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMappingNode.m; sourceTree = "<group>"; };
+		9303A35621FF00170011265D /* PPIPValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPIPValidator.h; sourceTree = "<group>"; };
+		9303A35721FF00170011265D /* PPDomainRequestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDomainRequestResult.h; sourceTree = "<group>"; };
+		9303A35821FF00170011265D /* PPDNSMappingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDNSMappingManager.m; sourceTree = "<group>"; };
+		9303A37821FF01960011265D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9303A37921FF01960011265D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9303A37E21FF05A70011265D /* FSAPMHttpDNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMHttpDNS.h; sourceTree = "<group>"; };
+		9303A37F21FF05A70011265D /* FSAPMHttpDNS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMHttpDNS.m; sourceTree = "<group>"; };
+		9303A38322005CFA0011265D /* FSURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSURLProtocol.h; sourceTree = "<group>"; };
+		9303A38422005CFA0011265D /* FSURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSURLProtocol.m; sourceTree = "<group>"; };
+		9303A38722006AC80011265D /* NSURLSessionConfiguration+FSAPM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionConfiguration+FSAPM.h"; sourceTree = "<group>"; };
+		9303A38822006AC80011265D /* NSURLSessionConfiguration+FSAPM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionConfiguration+FSAPM.m"; sourceTree = "<group>"; };
+		9303A38B22006C6C0011265D /* FSNetworkInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSNetworkInfo.h; sourceTree = "<group>"; };
+		9303A38C22006C6C0011265D /* FSNetworkInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSNetworkInfo.m; sourceTree = "<group>"; };
+		9303A38F22006DCA0011265D /* FSNetworkMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSNetworkMonitor.h; sourceTree = "<group>"; };
+		9303A39022006DCA0011265D /* FSNetworkMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSNetworkMonitor.m; sourceTree = "<group>"; };
+		9303A3932200711D0011265D /* FSBackTraceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBackTraceInfo.h; sourceTree = "<group>"; };
+		9303A3942200711D0011265D /* FSBackTraceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBackTraceInfo.m; sourceTree = "<group>"; };
+		9303A397220134850011265D /* FSNetworkFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSNetworkFlow.h; sourceTree = "<group>"; };
+		9303A398220134850011265D /* FSNetworkFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSNetworkFlow.m; sourceTree = "<group>"; };
+		9303A39C220137FC0011265D /* FSCrashMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCrashMonitor.h; sourceTree = "<group>"; };
+		9303A39D220137FC0011265D /* FSCrashMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCrashMonitor.m; sourceTree = "<group>"; };
+		9303A3A0220138A00011265D /* FSCrashInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCrashInfo.h; sourceTree = "<group>"; };
+		9303A3A1220138A00011265D /* FSCrashInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCrashInfo.m; sourceTree = "<group>"; };
+		9303A3A522013FEE0011265D /* FSAPMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMManager.h; sourceTree = "<group>"; };
+		9303A3A622013FEE0011265D /* FSAPMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMManager.m; sourceTree = "<group>"; };
+		9303A3AC220141970011265D /* FSSystemMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSSystemMonitor.h; sourceTree = "<group>"; };
+		9303A3AD220141970011265D /* FSSystemMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSSystemMonitor.m; sourceTree = "<group>"; };
+		9303A3B0220181190011265D /* FSAPMNotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMNotificationDefine.h; sourceTree = "<group>"; };
+		9305B37521F58B0000F30D7D /* FSAPMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSAPMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9305B37821F58B0000F30D7D /* FSAPMSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMSDK.h; sourceTree = "<group>"; };
+		9305B37921F58B0000F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9305B37E21F58B0000F30D7D /* FSAPMSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSAPMSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9305B38321F58B0000F30D7D /* FSAPMSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMSDKTests.m; sourceTree = "<group>"; };
+		9305B38521F58B0000F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9305B39321F58F3700F30D7D /* FSAPMSDK+Namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSAPMSDK+Namespace.h"; sourceTree = "<group>"; };
+		9305B39421F58F3700F30D7D /* FSAPMPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAPMPrefixHeader.pch; sourceTree = "<group>"; };
+		9305B39621F58F3700F30D7D /* FSAPMAPIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAPMAPIDefine.h; sourceTree = "<group>"; };
+		9305B39921F58F3700F30D7D /* FSAPMGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAPMGlobalDefine.h; sourceTree = "<group>"; };
+		9305B3B021F59B9300F30D7D /* FSAPMLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAPMLog.h; sourceTree = "<group>"; };
+		9305B3B121F59B9300F30D7D /* FSAPMLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMLog.m; sourceTree = "<group>"; };
+		9305B3BC21F6BE3300F30D7D /* FSCPUUsage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCPUUsage.h; sourceTree = "<group>"; };
+		9305B3BD21F6BE3300F30D7D /* FSCPUUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCPUUsage.m; sourceTree = "<group>"; };
+		9305B3CB21F6F3E700F30D7D /* FSWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSWeakProxy.h; sourceTree = "<group>"; };
+		9305B3CC21F6F3E700F30D7D /* FSWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSWeakProxy.m; sourceTree = "<group>"; };
+		9305B3CF21F71C7400F30D7D /* FSRAMUsage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSRAMUsage.h; sourceTree = "<group>"; };
+		9305B3D021F71C7400F30D7D /* FSRAMUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSRAMUsage.m; sourceTree = "<group>"; };
+		9305B3D321F71C9300F30D7D /* FSDiskUsage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSDiskUsage.h; sourceTree = "<group>"; };
+		9305B3D421F71C9300F30D7D /* FSDiskUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSDiskUsage.m; sourceTree = "<group>"; };
+		9305B3D721F71DBF00F30D7D /* FSDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSDeviceInfo.h; sourceTree = "<group>"; };
+		9305B3D821F71DBF00F30D7D /* FSDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSDeviceInfo.m; sourceTree = "<group>"; };
+		9305B3DB21F71E9900F30D7D /* FSFPSInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSFPSInfo.h; sourceTree = "<group>"; };
+		9305B3DC21F71E9900F30D7D /* FSFPSInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSFPSInfo.m; sourceTree = "<group>"; };
+		9305B3DF21F71EAD00F30D7D /* FSBatteryInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBatteryInfo.h; sourceTree = "<group>"; };
+		9305B3E021F71EAD00F30D7D /* FSBatteryInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBatteryInfo.m; sourceTree = "<group>"; };
+		9305B3E321F72B6A00F30D7D /* FSBatteryMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBatteryMonitor.h; sourceTree = "<group>"; };
+		9305B3E421F72B6A00F30D7D /* FSBatteryMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBatteryMonitor.m; sourceTree = "<group>"; };
+		9305B3E721F72B8200F30D7D /* FSFPSMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSFPSMonitor.h; sourceTree = "<group>"; };
+		9305B3E821F72B8200F30D7D /* FSFPSMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSFPSMonitor.m; sourceTree = "<group>"; };
+		93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FSAPMSDK-Library.xcconfig"; sourceTree = "<group>"; };
+		93913849221BCCF700E2B095 /* FSAPMSDK-Project.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FSAPMSDK-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		9391384A221BCD1800E2B095 /* FSAPMSDK-Project.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FSAPMSDK-Project.release.xcconfig"; sourceTree = "<group>"; };
+		9391384C221BCD4600E2B095 /* FSAPMSDK-Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FSAPMSDK-Project.xcconfig"; sourceTree = "<group>"; };
+		93995E6A21F816320064C7DE /* FSHardcodeDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSHardcodeDeviceInfo.h; sourceTree = "<group>"; };
+		93995E6B21F816320064C7DE /* FSHardcodeDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSHardcodeDeviceInfo.m; sourceTree = "<group>"; };
+		93995E7221F9BDEC0064C7DE /* FSStartupTimeMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSStartupTimeMonitor.h; sourceTree = "<group>"; };
+		93995E7321F9BDEC0064C7DE /* FSStartupTimeMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSStartupTimeMonitor.m; sourceTree = "<group>"; };
+		93995E7821F9C4CC0064C7DE /* FSANRMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSANRMonitor.h; sourceTree = "<group>"; };
+		93995E7921F9C4CC0064C7DE /* FSANRMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSANRMonitor.m; sourceTree = "<group>"; };
+		93995E7C21F9C5260064C7DE /* FSANRInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSANRInfo.h; sourceTree = "<group>"; };
+		93995E7D21F9C5260064C7DE /* FSANRInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSANRInfo.m; sourceTree = "<group>"; };
+		93995E8021FADCDF0064C7DE /* FSBayMaxProtector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBayMaxProtector.h; sourceTree = "<group>"; };
+		93995E8121FADCDF0064C7DE /* FSBayMaxProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBayMaxProtector.m; sourceTree = "<group>"; };
+		93995E8421FAEBA30064C7DE /* FSBayMaxCrashInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBayMaxCrashInfo.h; sourceTree = "<group>"; };
+		93995E8521FAEBA30064C7DE /* FSBayMaxCrashInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBayMaxCrashInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9303A2D221FE95DC0011265D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B37221F58B0000F30D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B37B21F58B0000F30D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B37F21F58B0000F30D7D /* FSAPMSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9303A2D621FE95DC0011265D /* FSAPMSDKVendor */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2D721FE95DC0011265D /* FSAPMSDKVendor.h */,
+				9303A2D821FE95DC0011265D /* FSAPMSDKVendor.m */,
+			);
+			path = FSAPMSDKVendor;
+			sourceTree = "<group>";
+		};
+		9303A2DE21FE96110011265D /* VendorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9303A37721FF01960011265D /* Reachability */,
+				9303A34521FF00170011265D /* PPDNSMapping */,
+				9303A2DF21FE96110011265D /* JJException */,
+			);
+			path = VendorSDK;
+			sourceTree = "<group>";
+		};
+		9303A2DF21FE96110011265D /* JJException */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2E021FE96110011265D /* ARC */,
+				9303A2F121FE96110011265D /* DeallocBlock */,
+				9303A30621FE96110011265D /* Main */,
+				9303A2F421FE96110011265D /* MRC */,
+				9303A30321FE96110011265D /* Swizzle */,
+			);
+			path = JJException;
+			sourceTree = "<group>";
+		};
+		9303A2E021FE96110011265D /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2ED21FE96110011265D /* NSAttributedString+AttributedStringHook.h */,
+				9303A2E221FE96110011265D /* NSAttributedString+AttributedStringHook.m */,
+				9303A2E521FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.h */,
+				9303A2EA21FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m */,
+				9303A2E621FE96110011265D /* NSMutableSet+MutableSetHook.h */,
+				9303A2EE21FE96110011265D /* NSMutableSet+MutableSetHook.m */,
+				9303A2F021FE96110011265D /* NSMutableString+MutableStringHook.h */,
+				9303A2E721FE96110011265D /* NSMutableString+MutableStringHook.m */,
+				9303A2E921FE96110011265D /* NSNotificationCenter+ClearNotification.h */,
+				9303A2E121FE96110011265D /* NSNotificationCenter+ClearNotification.m */,
+				9303A2E421FE96110011265D /* NSSet+SetHook.h */,
+				9303A2EB21FE96110011265D /* NSSet+SetHook.m */,
+				9303A2E821FE96110011265D /* NSString+StringHook.h */,
+				9303A2EF21FE96110011265D /* NSString+StringHook.m */,
+				9303A2E321FE96110011265D /* NSTimer+CleanTimer.h */,
+				9303A2EC21FE96110011265D /* NSTimer+CleanTimer.m */,
+			);
+			path = ARC;
+			sourceTree = "<group>";
+		};
+		9303A2F121FE96110011265D /* DeallocBlock */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2F321FE96110011265D /* NSObject+DeallocBlock.h */,
+				9303A2F221FE96110011265D /* NSObject+DeallocBlock.m */,
+			);
+			path = DeallocBlock;
+			sourceTree = "<group>";
+		};
+		9303A2F421FE96110011265D /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2F621FE96110011265D /* NSArray+ArrayHook.h */,
+				9303A2FF21FE96110011265D /* NSArray+ArrayHook.m */,
+				9303A2FD21FE96110011265D /* NSDictionary+DictionaryHook.h */,
+				9303A2F821FE96110011265D /* NSDictionary+DictionaryHook.m */,
+				9303A30221FE96110011265D /* NSMutableArray+MutableArrayHook.h */,
+				9303A2F921FE96110011265D /* NSMutableArray+MutableArrayHook.m */,
+				9303A2F721FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.h */,
+				9303A2FE21FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m */,
+				9303A2F521FE96110011265D /* NSObject+KVOCrash.h */,
+				9303A2FC21FE96110011265D /* NSObject+KVOCrash.m */,
+				9303A2FB21FE96110011265D /* NSObject+UnrecognizedSelectorHook.h */,
+				9303A30021FE96110011265D /* NSObject+UnrecognizedSelectorHook.m */,
+				9303A30121FE96110011265D /* NSObject+ZombieHook.h */,
+				9303A2FA21FE96110011265D /* NSObject+ZombieHook.m */,
+			);
+			path = MRC;
+			sourceTree = "<group>";
+		};
+		9303A30321FE96110011265D /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				9303A30521FE96110011265D /* NSObject+SwizzleHook.h */,
+				9303A30421FE96110011265D /* NSObject+SwizzleHook.m */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		9303A30621FE96110011265D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9303A30A21FE96110011265D /* JJException.h */,
+				9303A30821FE96110011265D /* JJException.m */,
+				9303A30921FE96110011265D /* JJExceptionProxy.h */,
+				9303A30721FE96110011265D /* JJExceptionProxy.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9303A34521FF00170011265D /* PPDNSMapping */ = {
+			isa = PBXGroup;
+			children = (
+				9303A35121FF00170011265D /* model */,
+				9303A34621FF00170011265D /* util */,
+				9303A34E21FF00170011265D /* PPDNSMapping.h */,
+				9303A34F21FF00170011265D /* PPDNSMappingManager.h */,
+				9303A35821FF00170011265D /* PPDNSMappingManager.m */,
+				9303A35021FF00170011265D /* PPDNSReporter.h */,
+				9303A34B21FF00170011265D /* PPDNSReporter.m */,
+				9303A35721FF00170011265D /* PPDomainRequestResult.h */,
+				9303A34C21FF00170011265D /* PPDomainRequestResult.m */,
+				9303A35621FF00170011265D /* PPIPValidator.h */,
+				9303A34D21FF00170011265D /* PPIPValidator.m */,
+			);
+			path = PPDNSMapping;
+			sourceTree = "<group>";
+		};
+		9303A34621FF00170011265D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				9303A34921FF00170011265D /* PPMappingUtil.h */,
+				9303A34721FF00170011265D /* PPMappingUtil.m */,
+				9303A34821FF00170011265D /* PPWeakTimer.h */,
+				9303A34A21FF00170011265D /* PPWeakTimer.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		9303A35121FF00170011265D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9303A35221FF00170011265D /* PPMappingNode.h */,
+				9303A35521FF00170011265D /* PPMappingNode.m */,
+				9303A35421FF00170011265D /* PPResolvedUrl.h */,
+				9303A35321FF00170011265D /* PPResolvedUrl.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9303A37721FF01960011265D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9303A37821FF01960011265D /* Reachability.h */,
+				9303A37921FF01960011265D /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		9303A37D21FF051B0011265D /* HTTPDNS */ = {
+			isa = PBXGroup;
+			children = (
+				9303A37E21FF05A70011265D /* FSAPMHttpDNS.h */,
+				9303A37F21FF05A70011265D /* FSAPMHttpDNS.m */,
+			);
+			path = HTTPDNS;
+			sourceTree = "<group>";
+		};
+		9303A39B220137900011265D /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				9303A3A0220138A00011265D /* FSCrashInfo.h */,
+				9303A3A1220138A00011265D /* FSCrashInfo.m */,
+				9303A39C220137FC0011265D /* FSCrashMonitor.h */,
+				9303A39D220137FC0011265D /* FSCrashMonitor.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		9305B36B21F58B0000F30D7D = {
+			isa = PBXGroup;
+			children = (
+				9305B37721F58B0000F30D7D /* FSAPMSDK */,
+				9305B38221F58B0000F30D7D /* FSAPMSDKTests */,
+				9303A2D621FE95DC0011265D /* FSAPMSDKVendor */,
+				9305B37621F58B0000F30D7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9305B37621F58B0000F30D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9305B37521F58B0000F30D7D /* FSAPMSDK.framework */,
+				9305B37E21F58B0000F30D7D /* FSAPMSDKTests.xctest */,
+				9303A2D521FE95DC0011265D /* libFSAPMSDKVendor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9305B37721F58B0000F30D7D /* FSAPMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9305B39B21F58F3700F30D7D /* Classes */,
+				9305B38F21F58F3700F30D7D /* Common */,
+				9305B39221F58F3700F30D7D /* Configs */,
+				9305B39C21F58F3700F30D7D /* Vendor */,
+				9305B37821F58B0000F30D7D /* FSAPMSDK.h */,
+				9305B37921F58B0000F30D7D /* Info.plist */,
+			);
+			path = FSAPMSDK;
+			sourceTree = "<group>";
+		};
+		9305B38221F58B0000F30D7D /* FSAPMSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				9305B38321F58B0000F30D7D /* FSAPMSDKTests.m */,
+				9305B38521F58B0000F30D7D /* Info.plist */,
+			);
+			path = FSAPMSDKTests;
+			sourceTree = "<group>";
+		};
+		9305B38F21F58F3700F30D7D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9305B39121F58F3700F30D7D /* Category */,
+				9305B39021F58F3700F30D7D /* Util */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9305B39021F58F3700F30D7D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9305B39121F58F3700F30D7D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9305B39221F58F3700F30D7D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				9305B39621F58F3700F30D7D /* FSAPMAPIDefine.h */,
+				9305B39921F58F3700F30D7D /* FSAPMGlobalDefine.h */,
+				9303A3B0220181190011265D /* FSAPMNotificationDefine.h */,
+				9305B39421F58F3700F30D7D /* FSAPMPrefixHeader.pch */,
+				9305B39321F58F3700F30D7D /* FSAPMSDK+Namespace.h */,
+				93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */,
+				93913849221BCCF700E2B095 /* FSAPMSDK-Project.debug.xcconfig */,
+				9391384A221BCD1800E2B095 /* FSAPMSDK-Project.release.xcconfig */,
+				9391384C221BCD4600E2B095 /* FSAPMSDK-Project.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		9305B39B21F58F3700F30D7D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3BB21F5D92400F30D7D /* Monitor */,
+				9305B3BA21F5D90200F30D7D /* Record */,
+				9305B3CB21F6F3E700F30D7D /* FSWeakProxy.h */,
+				9305B3CC21F6F3E700F30D7D /* FSWeakProxy.m */,
+				9303A3A522013FEE0011265D /* FSAPMManager.h */,
+				9303A3A622013FEE0011265D /* FSAPMManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9305B39C21F58F3700F30D7D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9303A2DE21FE96110011265D /* VendorSDK */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9305B3A521F5934000F30D7D /* BayMaxProtector */ = {
+			isa = PBXGroup;
+			children = (
+				93995E8021FADCDF0064C7DE /* FSBayMaxProtector.h */,
+				93995E8121FADCDF0064C7DE /* FSBayMaxProtector.m */,
+				93995E8421FAEBA30064C7DE /* FSBayMaxCrashInfo.h */,
+				93995E8521FAEBA30064C7DE /* FSBayMaxCrashInfo.m */,
+			);
+			path = BayMaxProtector;
+			sourceTree = "<group>";
+		};
+		9305B3A621F5934900F30D7D /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3B021F59B9300F30D7D /* FSAPMLog.h */,
+				9305B3B121F59B9300F30D7D /* FSAPMLog.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		9305B3A721F5935300F30D7D /* ANR */ = {
+			isa = PBXGroup;
+			children = (
+				93995E7C21F9C5260064C7DE /* FSANRInfo.h */,
+				93995E7D21F9C5260064C7DE /* FSANRInfo.m */,
+				93995E7821F9C4CC0064C7DE /* FSANRMonitor.h */,
+				93995E7921F9C4CC0064C7DE /* FSANRMonitor.m */,
+				9303A3932200711D0011265D /* FSBackTraceInfo.h */,
+				9303A3942200711D0011265D /* FSBackTraceInfo.m */,
+			);
+			path = ANR;
+			sourceTree = "<group>";
+		};
+		9305B3A821F5936200F30D7D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9303A38F22006DCA0011265D /* FSNetworkMonitor.h */,
+				9303A39022006DCA0011265D /* FSNetworkMonitor.m */,
+				9303A38B22006C6C0011265D /* FSNetworkInfo.h */,
+				9303A38C22006C6C0011265D /* FSNetworkInfo.m */,
+				9303A38322005CFA0011265D /* FSURLProtocol.h */,
+				9303A38422005CFA0011265D /* FSURLProtocol.m */,
+				9303A38722006AC80011265D /* NSURLSessionConfiguration+FSAPM.h */,
+				9303A38822006AC80011265D /* NSURLSessionConfiguration+FSAPM.m */,
+				9303A397220134850011265D /* FSNetworkFlow.h */,
+				9303A398220134850011265D /* FSNetworkFlow.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9305B3A921F5939300F30D7D /* RAM */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3CF21F71C7400F30D7D /* FSRAMUsage.h */,
+				9305B3D021F71C7400F30D7D /* FSRAMUsage.m */,
+			);
+			path = RAM;
+			sourceTree = "<group>";
+		};
+		9305B3AA21F593A000F30D7D /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3D721F71DBF00F30D7D /* FSDeviceInfo.h */,
+				9305B3D821F71DBF00F30D7D /* FSDeviceInfo.m */,
+				93995E6A21F816320064C7DE /* FSHardcodeDeviceInfo.h */,
+				93995E6B21F816320064C7DE /* FSHardcodeDeviceInfo.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		9305B3AB21F593AE00F30D7D /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3D321F71C9300F30D7D /* FSDiskUsage.h */,
+				9305B3D421F71C9300F30D7D /* FSDiskUsage.m */,
+			);
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		9305B3AC21F593CB00F30D7D /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3BC21F6BE3300F30D7D /* FSCPUUsage.h */,
+				9305B3BD21F6BE3300F30D7D /* FSCPUUsage.m */,
+			);
+			path = CPU;
+			sourceTree = "<group>";
+		};
+		9305B3AD21F593D300F30D7D /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3DF21F71EAD00F30D7D /* FSBatteryInfo.h */,
+				9305B3E021F71EAD00F30D7D /* FSBatteryInfo.m */,
+				9305B3E321F72B6A00F30D7D /* FSBatteryMonitor.h */,
+				9305B3E421F72B6A00F30D7D /* FSBatteryMonitor.m */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		9305B3AE21F594A200F30D7D /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3DB21F71E9900F30D7D /* FSFPSInfo.h */,
+				9305B3DC21F71E9900F30D7D /* FSFPSInfo.m */,
+				9305B3E721F72B8200F30D7D /* FSFPSMonitor.h */,
+				9305B3E821F72B8200F30D7D /* FSFPSMonitor.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		9305B3AF21F597DA00F30D7D /* StartupTime */ = {
+			isa = PBXGroup;
+			children = (
+				93995E7221F9BDEC0064C7DE /* FSStartupTimeMonitor.h */,
+				93995E7321F9BDEC0064C7DE /* FSStartupTimeMonitor.m */,
+			);
+			path = StartupTime;
+			sourceTree = "<group>";
+		};
+		9305B3BA21F5D90200F30D7D /* Record */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		9305B3BB21F5D92400F30D7D /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3CA21F6F38B00F30D7D /* System */,
+				9305B3A721F5935300F30D7D /* ANR */,
+				9303A39B220137900011265D /* Crash */,
+				9305B3A521F5934000F30D7D /* BayMaxProtector */,
+				9305B3A621F5934900F30D7D /* Log */,
+				9303A37D21FF051B0011265D /* HTTPDNS */,
+				9305B3A821F5936200F30D7D /* Network */,
+				9305B3AF21F597DA00F30D7D /* StartupTime */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		9305B3CA21F6F38B00F30D7D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				9305B3AD21F593D300F30D7D /* Battery */,
+				9305B3AC21F593CB00F30D7D /* CPU */,
+				9305B3AA21F593A000F30D7D /* Device */,
+				9305B3AE21F594A200F30D7D /* FPS */,
+				9305B3A921F5939300F30D7D /* RAM */,
+				9305B3AB21F593AE00F30D7D /* Disk */,
+				9303A3AC220141970011265D /* FSSystemMonitor.h */,
+				9303A3AD220141970011265D /* FSSystemMonitor.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9305B37021F58B0000F30D7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B3E521F72B6A00F30D7D /* FSBatteryMonitor.h in Headers */,
+				9305B3E121F71EAD00F30D7D /* FSBatteryInfo.h in Headers */,
+				9305B3E921F72B8200F30D7D /* FSFPSMonitor.h in Headers */,
+				9305B3D921F71DBF00F30D7D /* FSDeviceInfo.h in Headers */,
+				9303A3A722013FEE0011265D /* FSAPMManager.h in Headers */,
+				93995E7421F9BDEC0064C7DE /* FSStartupTimeMonitor.h in Headers */,
+				9303A38021FF05A70011265D /* FSAPMHttpDNS.h in Headers */,
+				9303A38D22006C6C0011265D /* FSNetworkInfo.h in Headers */,
+				9303A39122006DCA0011265D /* FSNetworkMonitor.h in Headers */,
+				93995E8621FAEBA30064C7DE /* FSBayMaxCrashInfo.h in Headers */,
+				93995E8221FADCDF0064C7DE /* FSBayMaxProtector.h in Headers */,
+				9303A3A2220138A00011265D /* FSCrashInfo.h in Headers */,
+				9303A39E220137FC0011265D /* FSCrashMonitor.h in Headers */,
+				93995E7A21F9C4CC0064C7DE /* FSANRMonitor.h in Headers */,
+				93995E7E21F9C5260064C7DE /* FSANRInfo.h in Headers */,
+				9303A399220134850011265D /* FSNetworkFlow.h in Headers */,
+				9303A3AE220141970011265D /* FSSystemMonitor.h in Headers */,
+				9305B3D521F71C9300F30D7D /* FSDiskUsage.h in Headers */,
+				9305B3D121F71C7400F30D7D /* FSRAMUsage.h in Headers */,
+				9305B39D21F58F3700F30D7D /* FSAPMSDK+Namespace.h in Headers */,
+				9305B3BE21F6BE3300F30D7D /* FSCPUUsage.h in Headers */,
+				9303A31021FE96110011265D /* NSSet+SetHook.h in Headers */,
+				9303A36621FF00170011265D /* PPDNSMappingManager.h in Headers */,
+				9303A36E21FF00170011265D /* PPIPValidator.h in Headers */,
+				9303A34221FE96110011265D /* JJExceptionProxy.h in Headers */,
+				9303A32521FE96110011265D /* NSObject+DeallocBlock.h in Headers */,
+				9303A32721FE96110011265D /* NSArray+ArrayHook.h in Headers */,
+				9303A35B21FF00170011265D /* PPWeakTimer.h in Headers */,
+				9305B38621F58B0000F30D7D /* FSAPMSDK.h in Headers */,
+				9303A31521FE96110011265D /* NSString+StringHook.h in Headers */,
+				9303A36F21FF00170011265D /* PPDomainRequestResult.h in Headers */,
+				9303A31121FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.h in Headers */,
+				9303A31D21FE96110011265D /* NSAttributedString+AttributedStringHook.h in Headers */,
+				9303A33A21FE96110011265D /* NSMutableArray+MutableArrayHook.h in Headers */,
+				9303A33221FE96110011265D /* NSDictionary+DictionaryHook.h in Headers */,
+				9305B3CD21F6F3E700F30D7D /* FSWeakProxy.h in Headers */,
+				9303A34321FE96110011265D /* JJException.h in Headers */,
+				9303A31221FE96110011265D /* NSMutableSet+MutableSetHook.h in Headers */,
+				9305B3DD21F71E9900F30D7D /* FSFPSInfo.h in Headers */,
+				9303A30F21FE96110011265D /* NSTimer+CleanTimer.h in Headers */,
+				9305B3B221F59B9300F30D7D /* FSAPMLog.h in Headers */,
+				9305B3A321F58F3700F30D7D /* FSAPMGlobalDefine.h in Headers */,
+				9303A36721FF00170011265D /* PPDNSReporter.h in Headers */,
+				9303A37A21FF01960011265D /* Reachability.h in Headers */,
+				9303A36B21FF00170011265D /* PPResolvedUrl.h in Headers */,
+				9303A38522005CFA0011265D /* FSURLProtocol.h in Headers */,
+				9303A35C21FF00170011265D /* PPMappingUtil.h in Headers */,
+				9305B39E21F58F3700F30D7D /* FSAPMPrefixHeader.pch in Headers */,
+				9303A33921FE96110011265D /* NSObject+ZombieHook.h in Headers */,
+				9303A3952200711D0011265D /* FSBackTraceInfo.h in Headers */,
+				9303A36821FF00170011265D /* PPMappingNode.h in Headers */,
+				93995E6C21F816320064C7DE /* FSHardcodeDeviceInfo.h in Headers */,
+				9303A32F21FE96110011265D /* NSObject+UnrecognizedSelectorHook.h in Headers */,
+				9303A31621FE96110011265D /* NSNotificationCenter+ClearNotification.h in Headers */,
+				9303A32621FE96110011265D /* NSObject+KVOCrash.h in Headers */,
+				9303A32821FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.h in Headers */,
+				9305B3A021F58F3700F30D7D /* FSAPMAPIDefine.h in Headers */,
+				9303A32221FE96110011265D /* NSMutableString+MutableStringHook.h in Headers */,
+				9303A36521FF00170011265D /* PPDNSMapping.h in Headers */,
+				9303A33D21FE96110011265D /* NSObject+SwizzleHook.h in Headers */,
+				9303A38922006AC80011265D /* NSURLSessionConfiguration+FSAPM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9303A2D421FE95DC0011265D /* FSAPMSDKVendor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9303A2DB21FE95DC0011265D /* Build configuration list for PBXNativeTarget "FSAPMSDKVendor" */;
+			buildPhases = (
+				9303A2D121FE95DC0011265D /* Sources */,
+				9303A2D221FE95DC0011265D /* Frameworks */,
+				9303A2D321FE95DC0011265D /* CopyFiles */,
+				9303A34421FE96350011265D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSAPMSDKVendor;
+			productName = FSAPMSDKVendor;
+			productReference = 9303A2D521FE95DC0011265D /* libFSAPMSDKVendor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9305B37421F58B0000F30D7D /* FSAPMSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9305B38921F58B0000F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDK" */;
+			buildPhases = (
+				9305B37021F58B0000F30D7D /* Headers */,
+				9305B37121F58B0000F30D7D /* Sources */,
+				9305B37221F58B0000F30D7D /* Frameworks */,
+				9305B37321F58B0000F30D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSAPMSDK;
+			productName = FSAPMSDK;
+			productReference = 9305B37521F58B0000F30D7D /* FSAPMSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9305B37D21F58B0000F30D7D /* FSAPMSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9305B38C21F58B0000F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKTests" */;
+			buildPhases = (
+				9305B37A21F58B0000F30D7D /* Sources */,
+				9305B37B21F58B0000F30D7D /* Frameworks */,
+				9305B37C21F58B0000F30D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9305B38121F58B0000F30D7D /* PBXTargetDependency */,
+			);
+			name = FSAPMSDKTests;
+			productName = FSAPMSDKTests;
+			productReference = 9305B37E21F58B0000F30D7D /* FSAPMSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9305B36C21F58B0000F30D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 2345;
+				TargetAttributes = {
+					9303A2CA21FE93E20011265D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9303A2D421FE95DC0011265D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9305B37421F58B0000F30D7D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9305B37D21F58B0000F30D7D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9305B36F21F58B0000F30D7D /* Build configuration list for PBXProject "FSAPMSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9305B36B21F58B0000F30D7D;
+			productRefGroup = 9305B37621F58B0000F30D7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9305B37421F58B0000F30D7D /* FSAPMSDK */,
+				9303A2CA21FE93E20011265D /* FSAPMSDK-Universal */,
+				9303A2D421FE95DC0011265D /* FSAPMSDKVendor */,
+				9305B37D21F58B0000F30D7D /* FSAPMSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9305B37321F58B0000F30D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B37C21F58B0000F30D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9303A2D021FE94C20011265D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Scripts/build-universal-framework.sh\n";
+		};
+		9303A34421FE96350011265D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Scripts/generate_namespace_header.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9303A2D121FE95DC0011265D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9303A36D21FF00170011265D /* PPMappingNode.m in Sources */,
+				9303A33121FE96110011265D /* NSObject+KVOCrash.m in Sources */,
+				9303A36A21FF00170011265D /* PPResolvedUrl.m in Sources */,
+				9303A31821FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */,
+				9303A36421FF00170011265D /* PPIPValidator.m in Sources */,
+				9303A33821FE96110011265D /* NSObject+UnrecognizedSelectorHook.m in Sources */,
+				9303A36021FF00170011265D /* PPDNSReporter.m in Sources */,
+				9303A32C21FE96110011265D /* NSMutableArray+MutableArrayHook.m in Sources */,
+				9303A31F21FE96110011265D /* NSMutableSet+MutableSetHook.m in Sources */,
+				9303A33F21FE96110011265D /* JJExceptionProxy.m in Sources */,
+				9303A33421FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m in Sources */,
+				9303A31A21FE96110011265D /* NSSet+SetHook.m in Sources */,
+				9303A2D921FE95DC0011265D /* FSAPMSDKVendor.m in Sources */,
+				9303A35A21FF00170011265D /* PPMappingUtil.m in Sources */,
+				9303A31421FE96110011265D /* NSMutableString+MutableStringHook.m in Sources */,
+				9303A32E21FE96110011265D /* NSObject+ZombieHook.m in Sources */,
+				9303A37121FF00170011265D /* PPDNSMappingManager.m in Sources */,
+				9303A33621FE96110011265D /* NSArray+ArrayHook.m in Sources */,
+				9303A35E21FF00170011265D /* PPWeakTimer.m in Sources */,
+				9303A32121FE96110011265D /* NSString+StringHook.m in Sources */,
+				9303A31C21FE96110011265D /* NSTimer+CleanTimer.m in Sources */,
+				9303A30C21FE96110011265D /* NSNotificationCenter+ClearNotification.m in Sources */,
+				9303A36221FF00170011265D /* PPDomainRequestResult.m in Sources */,
+				9303A32A21FE96110011265D /* NSDictionary+DictionaryHook.m in Sources */,
+				9303A37C21FF01960011265D /* Reachability.m in Sources */,
+				9303A33C21FE96110011265D /* NSObject+SwizzleHook.m in Sources */,
+				9303A32421FE96110011265D /* NSObject+DeallocBlock.m in Sources */,
+				9303A30E21FE96110011265D /* NSAttributedString+AttributedStringHook.m in Sources */,
+				9303A34121FE96110011265D /* JJException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B37121F58B0000F30D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9303A35921FF00170011265D /* PPMappingUtil.m in Sources */,
+				9303A38622005CFA0011265D /* FSURLProtocol.m in Sources */,
+				9303A33721FE96110011265D /* NSObject+UnrecognizedSelectorHook.m in Sources */,
+				9305B3BF21F6BE3300F30D7D /* FSCPUUsage.m in Sources */,
+				9303A32921FE96110011265D /* NSDictionary+DictionaryHook.m in Sources */,
+				9305B3DE21F71E9900F30D7D /* FSFPSInfo.m in Sources */,
+				9303A34021FE96110011265D /* JJException.m in Sources */,
+				9303A36C21FF00170011265D /* PPMappingNode.m in Sources */,
+				9305B3D621F71C9300F30D7D /* FSDiskUsage.m in Sources */,
+				9303A30B21FE96110011265D /* NSNotificationCenter+ClearNotification.m in Sources */,
+				9303A39F220137FC0011265D /* FSCrashMonitor.m in Sources */,
+				93995E8721FAEBA30064C7DE /* FSBayMaxCrashInfo.m in Sources */,
+				9303A31721FE96110011265D /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */,
+				9305B3B321F59B9300F30D7D /* FSAPMLog.m in Sources */,
+				9305B3DA21F71DBF00F30D7D /* FSDeviceInfo.m in Sources */,
+				9303A37021FF00170011265D /* PPDNSMappingManager.m in Sources */,
+				9303A37B21FF01960011265D /* Reachability.m in Sources */,
+				9303A31B21FE96110011265D /* NSTimer+CleanTimer.m in Sources */,
+				9303A31321FE96110011265D /* NSMutableString+MutableStringHook.m in Sources */,
+				9303A33021FE96110011265D /* NSObject+KVOCrash.m in Sources */,
+				9305B3E621F72B6A00F30D7D /* FSBatteryMonitor.m in Sources */,
+				9303A35D21FF00170011265D /* PPWeakTimer.m in Sources */,
+				9303A3AF220141970011265D /* FSSystemMonitor.m in Sources */,
+				9303A36321FF00170011265D /* PPIPValidator.m in Sources */,
+				9303A38A22006AC80011265D /* NSURLSessionConfiguration+FSAPM.m in Sources */,
+				9303A32021FE96110011265D /* NSString+StringHook.m in Sources */,
+				9303A35F21FF00170011265D /* PPDNSReporter.m in Sources */,
+				9305B3D221F71C7400F30D7D /* FSRAMUsage.m in Sources */,
+				9303A32D21FE96110011265D /* NSObject+ZombieHook.m in Sources */,
+				9303A3A822013FEE0011265D /* FSAPMManager.m in Sources */,
+				9303A38121FF05A70011265D /* FSAPMHttpDNS.m in Sources */,
+				9305B3CE21F6F3E700F30D7D /* FSWeakProxy.m in Sources */,
+				9303A33B21FE96110011265D /* NSObject+SwizzleHook.m in Sources */,
+				93995E7B21F9C4CC0064C7DE /* FSANRMonitor.m in Sources */,
+				9303A31E21FE96110011265D /* NSMutableSet+MutableSetHook.m in Sources */,
+				9303A33321FE96110011265D /* NSMutableDictionary+MutableDictionaryHook.m in Sources */,
+				9303A33E21FE96110011265D /* JJExceptionProxy.m in Sources */,
+				9303A36121FF00170011265D /* PPDomainRequestResult.m in Sources */,
+				9303A31921FE96110011265D /* NSSet+SetHook.m in Sources */,
+				9303A39222006DCA0011265D /* FSNetworkMonitor.m in Sources */,
+				9303A30D21FE96110011265D /* NSAttributedString+AttributedStringHook.m in Sources */,
+				9303A39A220134850011265D /* FSNetworkFlow.m in Sources */,
+				9303A32321FE96110011265D /* NSObject+DeallocBlock.m in Sources */,
+				9303A38E22006C6C0011265D /* FSNetworkInfo.m in Sources */,
+				9303A3962200711D0011265D /* FSBackTraceInfo.m in Sources */,
+				9303A36921FF00170011265D /* PPResolvedUrl.m in Sources */,
+				93995E6D21F816320064C7DE /* FSHardcodeDeviceInfo.m in Sources */,
+				9305B3EA21F72B8200F30D7D /* FSFPSMonitor.m in Sources */,
+				93995E7F21F9C5260064C7DE /* FSANRInfo.m in Sources */,
+				93995E7521F9BDEC0064C7DE /* FSStartupTimeMonitor.m in Sources */,
+				9305B3E221F71EAD00F30D7D /* FSBatteryInfo.m in Sources */,
+				9303A32B21FE96110011265D /* NSMutableArray+MutableArrayHook.m in Sources */,
+				9303A33521FE96110011265D /* NSArray+ArrayHook.m in Sources */,
+				9303A3A3220138A00011265D /* FSCrashInfo.m in Sources */,
+				93995E8321FADCDF0064C7DE /* FSBayMaxProtector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9305B37A21F58B0000F30D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305B38421F58B0000F30D7D /* FSAPMSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9303A2CF21FE94890011265D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9305B37421F58B0000F30D7D /* FSAPMSDK */;
+			targetProxy = 9303A2CE21FE94890011265D /* PBXContainerItemProxy */;
+		};
+		9305B38121F58B0000F30D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9305B37421F58B0000F30D7D /* FSAPMSDK */;
+			targetProxy = 9305B38021F58B0000F30D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9303A2CB21FE93E30011265D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9303A2CC21FE93E30011265D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9303A2DC21FE95DC0011265D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9303A2DD21FE95DC0011265D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9305B38721F58B0000F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93913849221BCCF700E2B095 /* FSAPMSDK-Project.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9305B38821F58B0000F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9391384A221BCD1800E2B095 /* FSAPMSDK-Project.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9305B38A21F58B0000F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FSAPMSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.FSAPMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9305B38B21F58B0000F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93913848221BCCD000E2B095 /* FSAPMSDK-Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FSAPMSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.FSAPMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9305B38D21F58B0000F30D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.FSAPMSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9305B38E21F58B0000F30D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FSAPMSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.FSAPMSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9303A2CD21FE93E30011265D /* Build configuration list for PBXAggregateTarget "FSAPMSDK-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9303A2CB21FE93E30011265D /* Debug */,
+				9303A2CC21FE93E30011265D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9303A2DB21FE95DC0011265D /* Build configuration list for PBXNativeTarget "FSAPMSDKVendor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9303A2DC21FE95DC0011265D /* Debug */,
+				9303A2DD21FE95DC0011265D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B36F21F58B0000F30D7D /* Build configuration list for PBXProject "FSAPMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B38721F58B0000F30D7D /* Debug */,
+				9305B38821F58B0000F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B38921F58B0000F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B38A21F58B0000F30D7D /* Debug */,
+				9305B38B21F58B0000F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9305B38C21F58B0000F30D7D /* Build configuration list for PBXNativeTarget "FSAPMSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9305B38D21F58B0000F30D7D /* Debug */,
+				9305B38E21F58B0000F30D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9305B36C21F58B0000F30D7D /* Project object */;
+}
