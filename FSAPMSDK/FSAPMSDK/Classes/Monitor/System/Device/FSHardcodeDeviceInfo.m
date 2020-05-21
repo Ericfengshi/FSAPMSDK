@@ -2037,6 +2037,14 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
                                               @"iPhone11,6" : @(iPhone11_6),
                                               // iPhone XR
                                               @"iPhone11,8" : @(iPhone11_8),
+                                              // iPhone 11
+                                              @"iPhone12,1" : @(iPhone12_1),
+                                              // iPhone 11 Pro
+                                              @"iPhone12,3" : @(iPhone12_3),
+                                              // iPhone 11 Pro Max
+                                              @"iPhone12,5" : @(iPhone12_5),
+                                              // iPhone SE (2020)
+                                              @"iPhone12,8" : @(iPhone12_8),
                                               
                                               /* iPod */
                                               @"iPod1,1" : @(iPod1_1),
@@ -2046,6 +2054,8 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
                                               @"iPod5,1" : @(iPod5_1),
                                               // iPod 6
                                               @"iPod7,1" : @(iPod7_1),
+                                              // iPod 7
+                                              @"iPod9,1" : @(iPod9_1),
                                               
                                               /* iPad */
                                               // iPad
@@ -2103,6 +2113,9 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
                                               // iPad (6th generation)
                                               @"iPad7,5" : @(iPad7_5),
                                               @"iPad7,6" : @(iPad7_6),
+                                              // iPad (7th generation)
+                                              @"iPad7,11" : @(iPad7_11),
+                                              @"iPad7,12" : @(iPad7_12),
                                               // iPad Pro (11-inch)
                                               @"iPad8,1" : @(iPad8_1),
                                               @"iPad8,2" : @(iPad8_2),
@@ -2113,6 +2126,12 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
                                               @"iPad8,6" : @(iPad8_6),
                                               @"iPad8,7" : @(iPad8_7),
                                               @"iPad8,8" : @(iPad8_8),
+                                              // iPad Pro (11-inch) (2nd generation)
+                                              @"iPad8,9" : @(iPad8_9),
+                                              @"iPad8,10" : @(iPad8_10),
+                                              // iPad Pro (12.9-inch) (4th generation)
+                                              @"iPad8,11" : @(iPad8_11),
+                                              @"iPad8,12" : @(iPad8_12),
                                               };
         _hardcodedDeviceDict = hardcodedDeviceDict;
     }
