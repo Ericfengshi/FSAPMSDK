@@ -87,6 +87,15 @@ typedef NS_ENUM(NSInteger, FSHardcodedDeviceEnum) {
     iPhone11_6,
     // iPhone XR
     iPhone11_8,
+
+    // iPhone 11
+    iPhone12_1,
+    // iPhone 11 Pro
+    iPhone12_3,
+    // iPhone 11 Pro Max
+    iPhone12_5,
+    // iPhone SE (2020)
+    iPhone12_8,
     
     /* iPod */
     iPod1_1,
@@ -96,6 +105,9 @@ typedef NS_ENUM(NSInteger, FSHardcodedDeviceEnum) {
     iPod5_1,
     // iPod 6
     iPod7_1,
+    
+    // iPod 7
+    iPod9_1,
     
     /* iPad */
     // iPad
@@ -169,6 +181,10 @@ typedef NS_ENUM(NSInteger, FSHardcodedDeviceEnum) {
     iPad7_5,
     iPad7_6,
     
+    // iPad (7th generation)
+    iPad7_11,
+    iPad7_12,
+    
     // iPad Pro (11-inch)
     iPad8_1,
     iPad8_2,
@@ -180,6 +196,14 @@ typedef NS_ENUM(NSInteger, FSHardcodedDeviceEnum) {
     iPad8_6,
     iPad8_7,
     iPad8_8,
+    
+    // iPad Pro (11-inch) (2nd generation)
+    iPad8_9,
+    iPad8_10,
+    
+    // iPad Pro (12.9-inch) (4th generation)
+    iPad8_11,
+    iPad8_12,
     
     iUnknown
 };
@@ -287,6 +311,18 @@ static NSString * const HardcodedDeviceName(FSHardcodedDeviceEnum hardcodedDevic
         case iPhone11_8: {
             return @"iPhone XR";
         }
+        case iPhone12_1: {
+            return @"iPhone 11";
+        }
+        case iPhone12_3: {
+            return @"iPhone 11 Pro";
+        }
+        case iPhone12_5: {
+            return @"iPhone 11 Pro Max";
+        }
+        case iPhone12_8: {
+            return @"iPhone SE (2020)";
+        }
         // iPod
         case iPod1_1: {
             return @"iPod Touch";
@@ -305,6 +341,9 @@ static NSString * const HardcodedDeviceName(FSHardcodedDeviceEnum hardcodedDevic
         }
         case iPod7_1: {
             return @"iPod Touch 6";
+        }
+        case iPod9_1: {
+            return @"iPod Touch 7";
         }
         // iPad
         case iPad1_1: {
@@ -422,6 +461,12 @@ static NSString * const HardcodedDeviceName(FSHardcodedDeviceEnum hardcodedDevic
         case iPad7_6: {
             return @"iPad 6th generation (Wifi Cellular)";
         }
+        case iPad7_11: {
+            return @"iPad 7th generation (Wifi)";
+        }
+        case iPad7_12: {
+            return @"iPad 7th generation (Wifi Cellular)";
+        }
         case iPad8_1: {
             return @"iPad Pro 11-inch (Wifi)";
         }
@@ -445,6 +490,18 @@ static NSString * const HardcodedDeviceName(FSHardcodedDeviceEnum hardcodedDevic
         }
         case iPad8_8: {
             return @"iPad Pro 12.9-inch 3rd generation (1TB Wifi Cellular)";
+        }
+        case iPad8_9: {
+            return @"iPad Pro 11-inch 2nd generation (Wifi)";
+        }
+        case iPad8_10: {
+            return @"iPad Pro 11-inch 2nd generation (Wifi Cellular)";
+        }
+        case iPad8_11: {
+            return @"iPad Pro 12.9--inch 4th generation (Wifi)";
+        }
+        case iPad8_12: {
+            return @"iPad Pro 12.9--inch 4th generation (Wifi Cellular)";
         }
         default:
             return @"";
@@ -516,6 +573,12 @@ static const NSUInteger HardcodedDeviceCPUFrequency(FSHardcodedDeviceEnum hardco
         case iPhone11_8: {
             return 2490;
         }
+        case iPhone12_1:
+        case iPhone12_3:
+        case iPhone12_5:
+        case iPhone12_8: {
+            return 2650;
+        }
         // iPod
         case iPod1_1: {
             return 400;
@@ -534,6 +597,9 @@ static const NSUInteger HardcodedDeviceCPUFrequency(FSHardcodedDeviceEnum hardco
         }
         case iPod7_1: {
             return 1100;
+        }
+        case iPod9_1: {
+            return 2340;
         }
         // iPad
         case iPad1_1:
@@ -590,7 +656,9 @@ static const NSUInteger HardcodedDeviceCPUFrequency(FSHardcodedDeviceEnum hardco
             return 2380;
         }
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12: {
             return 2310;
         }
         case iPad8_1:
@@ -600,7 +668,11 @@ static const NSUInteger HardcodedDeviceCPUFrequency(FSHardcodedDeviceEnum hardco
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
+        case iPad8_8:
+        case iPad8_9:
+        case iPad8_10:
+        case iPad8_11:
+        case iPad8_12: {
             return 2490;
         }
         default:
@@ -669,6 +741,12 @@ static NSString * const HardcodedDeviceCPUName(FSHardcodedDeviceEnum hardcodedDe
         case iPhone11_8: {
             return @"Apple A12 Bionic";
         }
+        case iPhone12_1:
+        case iPhone12_3:
+        case iPhone12_5:
+        case iPhone12_8: {
+            return @"Apple A13";
+        }
         // iPod
         case iPod1_1: {
             return @"S5L8900";
@@ -687,6 +765,9 @@ static NSString * const HardcodedDeviceCPUName(FSHardcodedDeviceEnum hardcodedDe
         }
         case iPod7_1: {
             return @"Apple A8";
+        }
+        case iPod9_1: {
+            return @"A10 Fusion";
         }
         // iPad
         case iPad1_1: {
@@ -755,7 +836,9 @@ static NSString * const HardcodedDeviceCPUName(FSHardcodedDeviceEnum hardcodedDe
             return @"Apple A10X";
         }
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12: {
             return @"Apple A10";
         }
         case iPad8_1:
@@ -765,8 +848,12 @@ static NSString * const HardcodedDeviceCPUName(FSHardcodedDeviceEnum hardcodedDe
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
-            return @"Apple A12X";
+        case iPad8_8:
+        case iPad8_9:
+        case iPad8_10:
+        case iPad8_11:
+        case iPad8_12: {
+            return @"Apple A12Z";
         }
         default:
             return @"Unknown";
@@ -825,8 +912,12 @@ static NSString * const HardcodedDeviceCoprocessorName(FSHardcodedDeviceEnum har
         case iPhone11_2:
         case iPhone11_4:
         case iPhone11_6:
-        case iPhone11_8: {
-            return @"Apple M12";
+        case iPhone11_8:
+        case iPhone12_1:
+        case iPhone12_3:
+        case iPhone12_5:
+        case iPhone12_8:{
+            return @"N/A";
         }
         // iPod
         case iPod1_1:
@@ -838,6 +929,9 @@ static NSString * const HardcodedDeviceCoprocessorName(FSHardcodedDeviceEnum har
         }
         case iPod7_1: {
             return @"Apple M8";
+        }
+        case iPod9_1: {
+             return @"Apple M10";
         }
         // iPad
         case iPad1_1:
@@ -886,7 +980,9 @@ static NSString * const HardcodedDeviceCoprocessorName(FSHardcodedDeviceEnum har
         case iPad7_3:
         case iPad7_4:
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12: {
             return @"Apple M10";
         }
         case iPad8_1:
@@ -896,7 +992,11 @@ static NSString * const HardcodedDeviceCoprocessorName(FSHardcodedDeviceEnum har
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
+        case iPad8_8:
+        case iPad8_9:
+        case iPad8_10:
+        case iPad8_11:
+        case iPad8_12: {
             return @"Apple M12";
         }
         default:
@@ -990,6 +1090,18 @@ static const NSUInteger HardcodedDeviceBatteryCapacity(FSHardcodedDeviceEnum har
         case iPhone11_8: {
             return 2942;
         }
+        case iPhone12_1: {
+            return 3110;
+        }
+        case iPhone12_3: {
+            return 3046;
+        }
+        case iPhone12_5: {
+            return 3969;
+        }
+        case iPhone12_8: {
+            return 1821;
+        }
         // iPod
         case iPod1_1: {
             return 580;
@@ -1007,6 +1119,9 @@ static const NSUInteger HardcodedDeviceBatteryCapacity(FSHardcodedDeviceEnum har
             return 1030;
         }
         case iPod7_1: {
+            return 1043;
+        }
+        case iPod9_1: {
             return 1043;
         }
         // iPad
@@ -1078,7 +1193,9 @@ static const NSUInteger HardcodedDeviceBatteryCapacity(FSHardcodedDeviceEnum har
             return 8134;
         }
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12: {
             return 8820;
         }
         case iPad8_1:
@@ -1093,6 +1210,14 @@ static const NSUInteger HardcodedDeviceBatteryCapacity(FSHardcodedDeviceEnum har
         case iPad8_8: {
             return 9720;
         }
+        case iPad8_9:
+        case iPad8_10: {
+            return 7540;
+        }
+        case iPad8_11:
+        case iPad8_12: {
+            return 9720;
+        }
         default:
             return 0;
     }
@@ -1100,10 +1225,7 @@ static const NSUInteger HardcodedDeviceBatteryCapacity(FSHardcodedDeviceEnum har
 
 /**
  电池电压
- 
- iPad Pro 12.9-inch 3th (iPad8_5、iPad8_6、iPad8_7、iPad8_8) 数据来自
- https://zhuanlan.zhihu.com/p/48880124
- 
+
  @param hardcodedDevice 硬件型号
  @return CGFloat 单位 V
  */
@@ -1184,6 +1306,16 @@ static const CGFloat HardcodedDeviceBatteryVoltage(FSHardcodedDeviceEnum hardcod
         case iPhone11_8: {
             return 3.79;
         }
+        case iPhone12_1:
+        case iPhone12_3: {
+            return 3.83;
+        }
+        case iPhone12_5: {
+            return 3.79;
+        }
+        case iPhone12_8: {
+            return 3.82;
+        }
         // iPod
         case iPod1_1: {
             return 3.7;
@@ -1200,7 +1332,8 @@ static const CGFloat HardcodedDeviceBatteryVoltage(FSHardcodedDeviceEnum hardcod
         case iPod5_1: {
             return 3.7;
         }
-        case iPod7_1: {
+        case iPod7_1:
+        case iPod9_1: {
             return 3.83;
         }
         // iPad
@@ -1272,7 +1405,9 @@ static const CGFloat HardcodedDeviceBatteryVoltage(FSHardcodedDeviceEnum hardcod
             return 3.77;
         }
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12:{
             return 3.73;
         }
         case iPad8_1:
@@ -1284,8 +1419,14 @@ static const CGFloat HardcodedDeviceBatteryVoltage(FSHardcodedDeviceEnum hardcod
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
+        case iPad8_8:
+        case iPad8_11:
+        case iPad8_12:{
             return 3.78;
+        }
+        case iPad8_9:
+        case iPad8_10: {
+            return 3.81;
         }
         default:
             return 0;
@@ -1362,18 +1503,22 @@ static const CGFloat HardcodedDeviceScreenSize(FSHardcodedDeviceEnum hardcodedDe
             return 5.5;
         }
         case iPhone10_3:
-        case iPhone10_6: {
-            return 5.8;
-        }
-        case iPhone11_2: {
+        case iPhone10_6:
+        case iPhone11_2:
+        case iPhone12_3: {
             return 5.8;
         }
         case iPhone11_4:
-        case iPhone11_6: {
+        case iPhone11_6:
+        case iPhone12_5: {
             return 6.5;
         }
-        case iPhone11_8: {
+        case iPhone11_8:
+        case iPhone12_1: {
             return 6.1;
+        }
+        case iPhone12_8:{
+            return 4;
         }
         // iPod
         case iPod1_1: {
@@ -1392,6 +1537,9 @@ static const CGFloat HardcodedDeviceScreenSize(FSHardcodedDeviceEnum hardcodedDe
             return 4.0;
         }
         case iPod7_1: {
+            return 4.0;
+        }
+        case iPod9_1: {
             return 4.0;
         }
         // iPad
@@ -1466,16 +1614,24 @@ static const CGFloat HardcodedDeviceScreenSize(FSHardcodedDeviceEnum hardcodedDe
         case iPad7_6: {
             return 9.7;
         }
+        case iPad7_11:
+        case iPad7_12:{
+            return 10.2;
+        }
         case iPad8_1:
         case iPad8_2:
         case iPad8_3:
-        case iPad8_4: {
+        case iPad8_4:
+        case iPad8_9:
+        case iPad8_10: {
             return 11.0;
         }
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
+        case iPad8_8:
+        case iPad8_11:
+        case iPad8_12: {
             return 12.9;
         }
         default:
@@ -1560,10 +1716,14 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
             return 458;
         }
         case iPhone11_4:
-        case iPhone11_6: {
+        case iPhone11_6:
+        case iPhone12_3:
+        case iPhone12_5: {
             return 458;
         }
-        case iPhone11_8: {
+        case iPhone11_8:
+        case iPhone12_1:
+        case iPhone12_8: {
             return 326;
         }
         // iPod
@@ -1582,7 +1742,8 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
         case iPod5_1: {
             return 326;
         }
-        case iPod7_1: {
+        case iPod7_1:
+        case iPod9_1: {
             return 326;
         }
         // iPad
@@ -1654,7 +1815,9 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
             return 264;
         }
         case iPad7_5:
-        case iPad7_6: {
+        case iPad7_6:
+        case iPad7_11:
+        case iPad7_12: {
             return 264;
         }
         case iPad8_1:
@@ -1666,7 +1829,11 @@ static const NSUInteger HardcodedDeviceScreenPPI(FSHardcodedDeviceEnum hardcoded
         case iPad8_5:
         case iPad8_6:
         case iPad8_7:
-        case iPad8_8: {
+        case iPad8_8:
+        case iPad8_9:
+        case iPad8_10:
+        case iPad8_11:
+        case iPad8_12: {
             return 264;
         }
         default:
