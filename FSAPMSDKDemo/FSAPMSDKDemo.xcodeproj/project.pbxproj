@@ -32,41 +32,6 @@
 		9305B32521F5706300F30D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32421F5706300F30D7D /* main.m */; };
 		9305B32F21F5706300F30D7D /* FSAPMSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32E21F5706300F30D7D /* FSAPMSDKDemoTests.m */; };
 		9305B33A21F5706300F30D7D /* FSAPMSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B33921F5706300F30D7D /* FSAPMSDKDemoUITests.m */; };
-		931864FE2227867E004C98F5 /* SimulatorDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */; };
-		931864FF2227867E004C98F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31921F5706200F30D7D /* ViewController.m */; };
-		931865002227867E004C98F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B32421F5706300F30D7D /* main.m */; };
-		931865012227867E004C98F5 /* SimulatorCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA3522150A95005D550D /* SimulatorCrashViewController.m */; };
-		931865022227867E004C98F5 /* SimulatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3F42212B6DE0011265D /* SimulatorViewModel.m */; };
-		931865032227867E004C98F5 /* AboutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DC2211115C0011265D /* AboutViewModel.m */; };
-		931865042227867E004C98F5 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E2221145750011265D /* SettingTableViewCell.m */; };
-		931865052227867E004C98F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3BE2201B42A0011265D /* AboutViewController.m */; };
-		931865062227867E004C98F5 /* SimulatorBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3FD2212C3600011265D /* SimulatorBubbleView.m */; };
-		931865072227867E004C98F5 /* MonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3CE2201B5020011265D /* MonitorViewController.m */; };
-		931865082227867E004C98F5 /* SimulatorTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA432216512B005D550D /* SimulatorTimerViewController.m */; };
-		931865092227867E004C98F5 /* SimulatorANRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2F221501A8005D550D /* SimulatorANRViewController.m */; };
-		9318650A2227867E004C98F5 /* SimulatorNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA4022165111005D550D /* SimulatorNotificationViewController.m */; };
-		9318650B2227867E004C98F5 /* SimulatorZombieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93913836221A5F7300E2B095 /* SimulatorZombieViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9318650C2227867E004C98F5 /* SimulatorBayMaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA382215192A005D550D /* SimulatorBayMaxViewController.m */; };
-		9318650D2227867E004C98F5 /* SimulatorTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA2C221407A3005D550D /* SimulatorTestViewModel.m */; };
-		9318650E2227867E004C98F5 /* SimulatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A4002212CABA0011265D /* SimulatorManager.m */; };
-		9318650F2227867E004C98F5 /* SimulatorTestBaeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA292213E297005D550D /* SimulatorTestBaeViewController.m */; };
-		931865102227867E004C98F5 /* SystemMonitorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3EA2211719C0011265D /* SystemMonitorViewModel.m */; };
-		931865112227867E004C98F5 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B22201B3C70011265D /* NavigationController.m */; };
-		931865122227867E004C98F5 /* SettingTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3E5221147A60011265D /* SettingTableCellModel.m */; };
-		931865132227867E004C98F5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B92201B41B0011265D /* SettingViewController.m */; };
-		931865142227867E004C98F5 /* SettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3DF221111730011265D /* SettingViewModel.m */; };
-		931865152227867E004C98F5 /* SystemMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3D422110D870011265D /* SystemMonitorViewController.m */; };
-		931865162227867E004C98F5 /* SimulatorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA192213BCB4005D550D /* SimulatorDataViewController.m */; };
-		931865172227867E004C98F5 /* SimulatorNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */; };
-		931865182227867E004C98F5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3B52201B3ED0011265D /* TabBarController.m */; };
-		931865192227867E004C98F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305B31621F5706200F30D7D /* AppDelegate.m */; };
-		9318651A2227867E004C98F5 /* SystemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3ED221172070011265D /* SystemDetailViewController.m */; };
-		9318651B2227867E004C98F5 /* SimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303A3C32201B4520011265D /* SimulatorViewController.m */; };
-		9318651D2227867E004C98F5 /* FSAPMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93995E7621F9C1930064C7DE /* FSAPMSDK.framework */; };
-		9318651F2227867E004C98F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B32021F5706300F30D7D /* LaunchScreen.storyboard */; };
-		931865202227867E004C98F5 /* MonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9303A3CC2201B5020011265D /* MonitorViewController.xib */; };
-		931865212227867E004C98F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31E21F5706300F30D7D /* Assets.xcassets */; };
-		931865222227867E004C98F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9305B31B21F5706200F30D7D /* Main.storyboard */; };
 		933BFA172213B9BF005D550D /* SimulatorNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */; };
 		933BFA1A2213BCB4005D550D /* SimulatorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA192213BCB4005D550D /* SimulatorDataViewController.m */; };
 		933BFA1D2213BCD9005D550D /* SimulatorDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933BFA1C2213BCD9005D550D /* SimulatorDataDetailViewController.m */; };
@@ -149,7 +114,6 @@
 		9305B33921F5706300F30D7D /* FSAPMSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAPMSDKDemoUITests.m; sourceTree = "<group>"; };
 		9305B33B21F5706300F30D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9305B3C121F6DB0100F30D7D /* FSAPMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSAPMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSAPMSDKDemoDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933BFA152213B9BF005D550D /* SimulatorNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorNetworkViewController.h; sourceTree = "<group>"; };
 		933BFA162213B9BF005D550D /* SimulatorNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulatorNetworkViewController.m; sourceTree = "<group>"; };
 		933BFA182213BCB4005D550D /* SimulatorDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorDataViewController.h; sourceTree = "<group>"; };
@@ -196,14 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9318651C2227867E004C98F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9318651D2227867E004C98F5 /* FSAPMSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +353,6 @@
 				9305B31221F5706200F30D7D /* FSAPMSDKDemo.app */,
 				9305B32A21F5706300F30D7D /* FSAPMSDKDemoTests.xctest */,
 				9305B33521F5706300F30D7D /* FSAPMSDKDemoUITests.xctest */,
-				931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -547,23 +502,6 @@
 			productReference = 9305B33521F5706300F30D7D /* FSAPMSDKDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		931864FC2227867E004C98F5 /* FSAPMSDKDemoDev */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 931865232227867E004C98F5 /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoDev" */;
-			buildPhases = (
-				931864FD2227867E004C98F5 /* Sources */,
-				9318651C2227867E004C98F5 /* Frameworks */,
-				9318651E2227867E004C98F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FSAPMSDKDemoDev;
-			productName = FSAPMSDKDemo;
-			productReference = 931865262227867E004C98F5 /* FSAPMSDKDemoDev.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -600,7 +538,6 @@
 			projectRoot = "";
 			targets = (
 				9305B31121F5706200F30D7D /* FSAPMSDKDemo */,
-				931864FC2227867E004C98F5 /* FSAPMSDKDemoDev */,
 				9305B32921F5706300F30D7D /* FSAPMSDKDemoTests */,
 				9305B33421F5706300F30D7D /* FSAPMSDKDemoUITests */,
 			);
@@ -630,17 +567,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9318651E2227867E004C98F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9318651F2227867E004C98F5 /* LaunchScreen.storyboard in Resources */,
-				931865202227867E004C98F5 /* MonitorViewController.xib in Resources */,
-				931865212227867E004C98F5 /* Assets.xcassets in Resources */,
-				931865222227867E004C98F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,43 +623,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9305B33A21F5706300F30D7D /* FSAPMSDKDemoUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		931864FD2227867E004C98F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				931864FE2227867E004C98F5 /* SimulatorDataDetailViewController.m in Sources */,
-				931864FF2227867E004C98F5 /* ViewController.m in Sources */,
-				931865002227867E004C98F5 /* main.m in Sources */,
-				931865012227867E004C98F5 /* SimulatorCrashViewController.m in Sources */,
-				931865022227867E004C98F5 /* SimulatorViewModel.m in Sources */,
-				931865032227867E004C98F5 /* AboutViewModel.m in Sources */,
-				931865042227867E004C98F5 /* SettingTableViewCell.m in Sources */,
-				931865052227867E004C98F5 /* AboutViewController.m in Sources */,
-				931865062227867E004C98F5 /* SimulatorBubbleView.m in Sources */,
-				931865072227867E004C98F5 /* MonitorViewController.m in Sources */,
-				931865082227867E004C98F5 /* SimulatorTimerViewController.m in Sources */,
-				931865092227867E004C98F5 /* SimulatorANRViewController.m in Sources */,
-				9318650A2227867E004C98F5 /* SimulatorNotificationViewController.m in Sources */,
-				9318650B2227867E004C98F5 /* SimulatorZombieViewController.m in Sources */,
-				9318650C2227867E004C98F5 /* SimulatorBayMaxViewController.m in Sources */,
-				9318650D2227867E004C98F5 /* SimulatorTestViewModel.m in Sources */,
-				9318650E2227867E004C98F5 /* SimulatorManager.m in Sources */,
-				9318650F2227867E004C98F5 /* SimulatorTestBaeViewController.m in Sources */,
-				931865102227867E004C98F5 /* SystemMonitorViewModel.m in Sources */,
-				931865112227867E004C98F5 /* NavigationController.m in Sources */,
-				931865122227867E004C98F5 /* SettingTableCellModel.m in Sources */,
-				931865132227867E004C98F5 /* SettingViewController.m in Sources */,
-				931865142227867E004C98F5 /* SettingViewModel.m in Sources */,
-				931865152227867E004C98F5 /* SystemMonitorViewController.m in Sources */,
-				931865162227867E004C98F5 /* SimulatorDataViewController.m in Sources */,
-				931865172227867E004C98F5 /* SimulatorNetworkViewController.m in Sources */,
-				931865182227867E004C98F5 /* TabBarController.m in Sources */,
-				931865192227867E004C98F5 /* AppDelegate.m in Sources */,
-				9318651A2227867E004C98F5 /* SystemDetailViewController.m in Sources */,
-				9318651B2227867E004C98F5 /* SimulatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,42 +883,6 @@
 			};
 			name = Release;
 		};
-		931865242227867E004C98F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SHDWRXPG6N;
-				INFOPLIST_FILE = "$(SRCROOT)/FSAPMSDKDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		931865252227867E004C98F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SHDWRXPG6N;
-				INFOPLIST_FILE = "$(SRCROOT)/FSAPMSDKDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengs.apmSDK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1065,15 +918,6 @@
 			buildConfigurations = (
 				9305B34521F5706300F30D7D /* Debug */,
 				9305B34621F5706300F30D7D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		931865232227867E004C98F5 /* Build configuration list for PBXNativeTarget "FSAPMSDKDemoDev" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				931865242227867E004C98F5 /* Debug */,
-				931865252227867E004C98F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -560,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				9305B39B21F58F3700F30D7D /* Classes */,
-				9305B38F21F58F3700F30D7D /* Common */,
 				9305B39221F58F3700F30D7D /* Configs */,
 				9305B39C21F58F3700F30D7D /* Vendor */,
 				9305B37821F58B0000F30D7D /* FSAPMSDK.h */,
@@ -576,29 +575,6 @@
 				9305B38521F58B0000F30D7D /* Info.plist */,
 			);
 			path = FSAPMSDKTests;
-			sourceTree = "<group>";
-		};
-		9305B38F21F58F3700F30D7D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				9305B39121F58F3700F30D7D /* Category */,
-				9305B39021F58F3700F30D7D /* Util */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		9305B39021F58F3700F30D7D /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		9305B39121F58F3700F30D7D /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		9305B39221F58F3700F30D7D /* Configs */ = {
@@ -952,6 +928,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9305B36B21F58B0000F30D7D;
 			productRefGroup = 9305B37621F58B0000F30D7D /* Products */;
