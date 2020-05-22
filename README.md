@@ -1,29 +1,31 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 - [一 概述](#一-概述)
 - [二 系统](#二-系统)
-	- [2.1 设备信息](#21-设备信息)
-	- [2.2 设备硬编码](#22-设备硬编码)
+    - [2.1 设备信息](#21-设备信息)
+    - [2.2 设备硬编码](#22-设备硬编码)
 - [三 磁盘](#三-磁盘)
 - [四 CPU](#四-CPU)
 - [五 内存](#五-内存)
 - [六 启动时间](#六-启动时间)
-	- [6.1 冷启动](#61-冷启动)
-		- [6.1.1 main() 之前过程](#611-main-之前过程)
-		- [6.1.1 main() 之后过程](#611-main-之后过程)
+    - [6.1 冷启动](#61-冷启动)
+        - [6.1.1 main() 之前过程](#611-main-之前过程)
+        - [6.1.1 main() 之后过程](#611-main-之后过程)
 - [七 FPS](#七-FPS)
 - [八 卡顿](#八-卡顿)
 - [九 Crash 防护](#九-Crash-防护)
 - [十 Crash 记录](#十-Crash-记录)
 - [十一 网络监控](#十一-网络监控)
-	- [10.1 HTTPDNS](#101-HTTPDNS)
-	- [10.2 系统网络](#102-系统网络)
-	- [10.3 流量监控](#103-流量监控)
+    - [10.1 HTTPDNS](#101-HTTPDNS)
+    - [10.2 系统网络](#102-系统网络)
+    - [10.3 流量监控](#103-流量监控)
 - [参考资料](#参考资料)
 <!-- /TOC -->
 
 ## 一 概述
 
 APM 的全称是 Application performance management，即应用性能管理，通过对应用的可靠性、稳定性等方面的监控，进而达到快速修复问题、提高用户体验的目的。将在以下几个方面对数据进行监控，包括 **CPU 占有率，内存使用情况，磁盘使用情况，FPS，冷启动时间，卡顿，闪退，闪退防护，HTTPDNS，网络流量**等。
+
+此仓库为 APM 数据采集调研产物，主要是对性能监控实现进行了统一封装。其中 SDK 为实现代码，Demo 为调用详情。
 
 ## 二 系统
 
@@ -202,7 +204,7 @@ t1 = 系统先读取App的可执行文件（`Mach-O` 文件），从里面获得
 -   Objc SetUp: 初始化 Objective C Runtime
 -   Initializers
 
-![进入main方法前操作.png](/img/posts/ios-apm-monitor-research/b2098088.png)
+![进入main方法前操作.png](http://fengs.online/img/posts/ios-apm-monitor-research/b2098088.png)
 
 #### 6.1.2 main() 之后过程
 
@@ -296,7 +298,7 @@ FPS 是测量用于保存、显示动态视频的信息数量，每秒钟帧数�
 监控卡顿，最直接就是找到主线程。我们知道一个线程的消息事件处理都是依赖于 `NSRunLoop` 来驱动，所以要知道线程正在调用什么方法，就需要从 `NSRunLoop` 来入手。发现 `NSRunLoop` 调用方法主要就是在 `kCFRunLoopBeforeSources` 和`kCFRunLoopBeforeWaiting` 之间，还有`kCFRunLoopAfterWaiting` 之后，也就是如果我们发现这两个时间内耗时太长，那么就可以判定出此时主线程卡顿。
 
 
-![RunLoop监听卡顿.png](/img/posts/ios-apm-monitor-research/2102585e.png)
+![RunLoop监听卡顿.png](http://fengs.online/img/posts/ios-apm-monitor-research/2102585e.png)
 
 **代码实现：**
 
@@ -369,7 +371,8 @@ APP运行时Crash自动修复系统](https://neyoufan.github.io/2017/01/13/ios/B
 
 ## 十 Crash 记录
 
-开发 iOS 应用，解决 Crash 问题始终是一个难题。Crash分为两种，一种是由 `EXC_BAD_ACCESS` 引起的，原因是访问了不属于本进程的内存地址，有可能是访问已被释放的内存；另一种是未被捕获的 Objective-C 异常（NSException），导致程序向自身发送了 `SIGABRT` 信号而崩溃。
+
+开发 iOS 应用，解决 Crash 问题始终是一个难题。Crash分为两种，一种是`Mach Exception`（系统异常），`Mach`异常最终会转化成`Unix`信号投递到出错的线程，原因可能是访问了不属于本进程的内存地址，有可能是访问已被释放的内存；另一种是未被捕获的 `Objective-C` 异常（`NSException`），导致程序向自身发送了 `SIGABRT` 信号而崩溃。
 
 对于系统 Crash 而引起的程序异常退出，可以通过`UncaughtExceptionHandler` 机制捕获；也就是说在程序中 catch 以外的内容，被系统自带的错误处理而捕获。我们要做的就是用自定义的函数替代该 `ExceptionHandler` 即可。
 
@@ -481,6 +484,10 @@ void fs_installUncaughtCrashHandler() {
  -   上行流量
  -   下行流量
 
+
+### 待完善功能
+- 本地日志记录
+- 业务逻辑采集以及日志上传
 
 ## 参考资料
 - [Wedjat（华狄特）开发过程的调研和整理](https://github.com/aozhimin/iOS-Monitor-Platform)
