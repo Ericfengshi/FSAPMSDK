@@ -9,6 +9,9 @@
 #import "NSMutableArray+MutableArrayHook.h"
 #import "NSObject+SwizzleHook.h"
 #import "JJExceptionProxy.h"
+#import "JJExceptionMacros.h"
+
+JJSYNTH_DUMMY_CLASS(NSMutableArray_MutableArrayHook)
 
 @implementation NSMutableArray (MutableArrayHook)
 
@@ -24,6 +27,7 @@
     swizzleInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(replaceObjectAtIndex:withObject:), @selector(hookReplaceObjectAtIndex:withObject:));
     swizzleInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(replaceObjectsAtIndexes:withObjects:), @selector(hookReplaceObjectsAtIndexes:withObjects:));
     swizzleInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(replaceObjectsInRange:withObjectsFromArray:), @selector(hookReplaceObjectsInRange:withObjectsFromArray:));
+    swizzleInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(setObject:atIndexedSubscript:), @selector(hookSetObject:atIndexedSubscript:));
     swizzleInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(removeObjectsInRange:), @selector(hookRemoveObjectsInRange:));
     
     swizzleInstanceMethod(NSClassFromString(@"__NSCFArray"), @selector(objectAtIndex:), @selector(hookObjectAtIndex:));
@@ -109,6 +113,14 @@
         handleCrashException(JJExceptionGuardArrayContainer, [NSString stringWithFormat:@"NSMutableArray replaceObjectsInRange:withObjectsFromArray: range {%ld, %ld} extends beyond bounds [0 .. %ld]", (unsigned long)range.location, (unsigned long)range.length, (unsigned long)self.count]);
     } else {
         [self hookReplaceObjectsInRange:range withObjectsFromArray:otherArray];
+    }
+}
+
+- (void) hookSetObject:(id)object atIndexedSubscript:(NSUInteger)index {
+    if (index <= self.count && object) {
+        [self hookSetObject:object atIndexedSubscript:index];
+    }else{
+        handleCrashException(JJExceptionGuardArrayContainer,[NSString stringWithFormat:@"NSMutableArray setObject invalid object:%@ atIndexedSubscript:%tu total:%tu",object,index,self.count]);
     }
 }
 

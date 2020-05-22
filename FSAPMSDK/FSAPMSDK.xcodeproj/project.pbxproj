@@ -170,6 +170,7 @@
 		93995E8321FADCDF0064C7DE /* FSBayMaxProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E8121FADCDF0064C7DE /* FSBayMaxProtector.m */; };
 		93995E8621FAEBA30064C7DE /* FSBayMaxCrashInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 93995E8421FAEBA30064C7DE /* FSBayMaxCrashInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93995E8721FAEBA30064C7DE /* FSBayMaxCrashInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93995E8521FAEBA30064C7DE /* FSBayMaxCrashInfo.m */; };
+		93A7092F247796C400317797 /* JJExceptionMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A7092E247796C400317797 /* JJExceptionMacros.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,6 +333,7 @@
 		93995E8121FADCDF0064C7DE /* FSBayMaxProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBayMaxProtector.m; sourceTree = "<group>"; };
 		93995E8421FAEBA30064C7DE /* FSBayMaxCrashInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBayMaxCrashInfo.h; sourceTree = "<group>"; };
 		93995E8521FAEBA30064C7DE /* FSBayMaxCrashInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBayMaxCrashInfo.m; sourceTree = "<group>"; };
+		93A7092E247796C400317797 /* JJExceptionMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJExceptionMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +458,7 @@
 		9303A30621FE96110011265D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93A7092E247796C400317797 /* JJExceptionMacros.h */,
 				9303A30A21FE96110011265D /* JJException.h */,
 				9303A30821FE96110011265D /* JJException.m */,
 				9303A30921FE96110011265D /* JJExceptionProxy.h */,
@@ -819,6 +822,7 @@
 				9305B3D121F71C7400F30D7D /* FSRAMUsage.h in Headers */,
 				9305B39D21F58F3700F30D7D /* FSAPMSDK+Namespace.h in Headers */,
 				9305B3BE21F6BE3300F30D7D /* FSCPUUsage.h in Headers */,
+				93A7092F247796C400317797 /* JJExceptionMacros.h in Headers */,
 				9303A31021FE96110011265D /* NSSet+SetHook.h in Headers */,
 				9303A36621FF00170011265D /* PPDNSMappingManager.h in Headers */,
 				9303A36E21FF00170011265D /* PPIPValidator.h in Headers */,
