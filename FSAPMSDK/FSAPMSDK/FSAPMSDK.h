@@ -27,3 +27,5 @@ FOUNDATION_EXPORT const unsigned char FSAPMSDKVersionString[];
 #import <FSAPMSDK/FSBayMaxProtector.h>
 #import <FSAPMSDK/FSNetworkMonitor.h>
 #import <FSAPMSDK/FSBatteryMonitor.h>
+#import <FSAPMSDK/FSStartupTimeMonitor.h>
+#import <FSAPMSDK/FSAPMHttpDNS.h>
