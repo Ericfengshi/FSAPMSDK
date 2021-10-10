@@ -32,7 +32,7 @@
     } else if (indexPath.row == 1) {
         url = @"http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp";
     } else if (indexPath.row == 2) {
-        url = @"https://www.google.com/error";
+        url = @"http://www.baidu.com/error";
     }
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[url stringByRemovingPercentEncoding]]];
     NSURLSessionDataTask *dataTask =  [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * __nullable data, NSURLResponse * __nullable response, NSError * __nullable error) {
