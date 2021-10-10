@@ -143,7 +143,8 @@ NSString *const kSimulatorManagerDetailKey = @"detailKey";
  */
 - (UIViewController *)topViewController {
     UIViewController *resultVC;
-    resultVC = [self p_getTopViewController:[[UIApplication sharedApplication].keyWindow rootViewController]];
+    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    resultVC = [self p_getTopViewController:rootViewController];
     while (resultVC.presentedViewController) {
         resultVC = [self p_getTopViewController:resultVC.presentedViewController];
     }
